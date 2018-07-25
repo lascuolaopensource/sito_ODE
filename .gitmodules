@@ -1,3 +1,6 @@
 [submodule "www/site/fields/kirby-gallery"]
 	path = www/site/fields/kirby-gallery
 	url = git@github.com:TimOetting/kirby-gallery.git
+[submodule "www/site/plugins/calendar"]
+	path = www/site/plugins/calendar
+	url = https://github.com/mzur/kirby-calendar-plugin.git
