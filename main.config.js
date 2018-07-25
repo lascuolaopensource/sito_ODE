@@ -21,7 +21,7 @@ const css = {
   // Be sure to have your entries and sourcefiles named with the good file ext
   // —> .scss for sass / .less for less / .styl for stylus
   // Set to 'manual' to handle css yourself (using css-next for instance)
-  preprocessor: 'sass'
+  preprocessor: 'scss'
 }
 
 /**

@@ -37,7 +37,7 @@
   };
 
   Loader.prototype.maps = function () {
-    return 'AIzaSyCm8q0HlWOcPQ_iwUEwAPmQPIlqIZK0pBk';
+    //return 'AIzaSyCm8q0HlWOcPQ_iwUEwAPmQPIlqIZK0pBk';
     $.ajax({
       url: 'maps/key',
       success: (function (_loader) {

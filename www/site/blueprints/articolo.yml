@@ -28,7 +28,7 @@ fields:
 
   testo:
     label: testo dell'articolo
-    type: text
+    type: markdown
 
   galleria:
     label: galleria immagini (16/9)
