@@ -2,7 +2,7 @@
 	$tmpDate = getdate(0);
 	$currentDate = getdate();
 ?>
-
+<h3>eventi in programma</h3>
 <table class="calendar">
 
 <?php if (!$calendar->getAllEvents()): ?>
