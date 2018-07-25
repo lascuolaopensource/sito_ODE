@@ -25,7 +25,7 @@ fields:
   line_2:
     type: line
 
-interazioni:
+  interazioni:
     label: inserisci qui le interazioni che utilizzano dei form 
     type: structure
     fields:

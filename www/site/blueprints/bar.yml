@@ -34,6 +34,9 @@ fields:
         options: 
           food: food
           drink: drink
+  line:
+    type: line
+
   mail:
     label: mail 
     type: email

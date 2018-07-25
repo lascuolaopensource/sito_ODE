@@ -8,9 +8,12 @@ fields:
     type:  text
     width: 4/5
 
-  date:
+  datetime:
     label: data
-    type: date
+    type: datetime
+    default:
+      date: now
+      time: now
     width: 1/5
 
   cover:
@@ -23,13 +26,13 @@ fields:
     type: text
     width: 1/2
 
-  galleria:
-    label: galleria immagini (16/9)
-    type:  gallery
-
   testo:
     label: testo dell'articolo
     type: text
+
+  galleria:
+    label: galleria immagini (16/9)
+    type:  gallery
 
   video:
     label: url del video

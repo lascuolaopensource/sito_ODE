@@ -25,6 +25,9 @@ fields:
     type:  textarea
     width: 1/2
 
+  line:
+    type: line
+
   coworking:
     label: spunta se questo spazio è usabile per il coworking
     type: checkbox

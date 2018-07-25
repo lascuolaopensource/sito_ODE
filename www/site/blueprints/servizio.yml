@@ -14,10 +14,15 @@ fields:
   link:
     label: url di destinazione
     type: url
+    width: 1/2
 
   image:
     label: icona o immagine
     type: image 
+    width: 1/2
+
+  line:
+    type: line
 
   touchpoint:
     label: inserisci qui le informazioni di contatto 

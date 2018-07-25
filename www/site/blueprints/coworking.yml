@@ -21,6 +21,9 @@ fields:
     type:  textarea
     width: 1/2
 
+  lyne:
+    type: line
+    
   iscrizione:
     label: link per iscrizione
     type: url
