@@ -1,6 +1,8 @@
-title: Page
+title: servizi
 pages: true
-files: true
+pages:
+  templates:
+    -servizio
 fields:
   title:
     label: Title
@@ -8,5 +10,3 @@ fields:
   text:
     label: Text
     type:  textarea
-
-  

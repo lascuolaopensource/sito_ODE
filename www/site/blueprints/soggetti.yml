@@ -1,6 +1,8 @@
-title: Page
+title: soggetti
 pages: true
-files: true
+pages:
+  templates:
+    -soggetto
 fields:
   title:
     label: Title
@@ -8,5 +10,3 @@ fields:
   text:
     label: Text
     type:  textarea
-
-  

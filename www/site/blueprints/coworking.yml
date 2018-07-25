@@ -1,6 +1,7 @@
-title: Page
-pages: true
+title: coworking
+pages: false
 files: true
+  
 fields:
   title:
     label: Title
@@ -8,5 +9,4 @@ fields:
   text:
     label: Text
     type:  textarea
-
   
