@@ -4,9 +4,43 @@ files: true
   
 fields:
   title:
-    label: Title
+    label: nome del bar
     type:  text
-  text:
-    label: Text
+
+  descrizione:
+    label: descrizione
     type:  textarea
-  
+
+  offerta:
+    label: menu del giorno
+    type: structure
+    fields:
+      piatto: 
+        label: nome del piatto
+        type: text
+      image:
+        label: immagine del piatto
+        type: image
+      ingredienti:
+        label: ingredienti
+        type: textarea
+      prezzo:
+        label: prezzo
+        type: text
+      tipologia:
+        label: food/drink
+        type: radio
+        columns: 2
+        options: 
+          food: food
+          drink: drink
+  mail:
+    label: mail 
+    type: email
+
+  orario:
+    label: orario
+    type: text
+
+
+

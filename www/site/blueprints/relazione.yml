@@ -3,10 +3,40 @@ pages: false
 files: true
   
 fields:
+
   title:
-    label: Title
-    type:  text
-  text:
-    label: Text
-    type:  textarea
+   label: Nome della relazione
+   type: text
+
+  location:
+   label: Inserisci l'indirizzo della sede (via e città)
+   type: map
+   center:
+     lat: 41.900542
+     lng: 12.508994
+     zoom: 15
+
+  cap:
+   label: CAP
+   type: text
+   width: 1/2
+
+  tel:
+   label: Telefono
+   type: tel
+   width: 1/2
+
+  email:
+   label: Email
+   type: email
+   width: 1/2
+
+  apertura:
+   label: Giorni / Orari
+   type: textarea
+
+  note:
+    label: note
+    type: textarea
+
   

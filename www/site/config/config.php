@@ -1,6 +1,7 @@
 <?php
 
 @include __DIR__ . DS . 'license.php';
+c::set('map.key', 'AIzaSyCm8q0HlWOcPQ_iwUEwAPmQPIlqIZK0pBk');
 
 /*
 

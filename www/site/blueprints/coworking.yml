@@ -3,10 +3,36 @@ pages: false
 files: true
   
 fields:
-  title:
-    label: Title
+  coworking:
+    label: coworking
     type:  text
-  text:
-    label: Text
+
+  descrizione:
+    label: descrizione
     type:  textarea
+
+  tariffario:
+    label: tariffario
+    type:  textarea
+    width: 1/2
+
+  dotazione:
+    label: dotazione
+    type:  textarea
+    width: 1/2
+
+  iscrizione:
+    label: link per iscrizione
+    type: url
+
+  mail:
+    label: mail di contatto
+    type: email
+
+
+
+
+
+
+
   

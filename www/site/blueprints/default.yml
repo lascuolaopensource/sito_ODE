@@ -1,12 +1,47 @@
-title: Page
-pages: true
-files: true
+title: home
+
 fields:
   title:
     label: Title
     type:  text
-  text:
-    label: Text
+
+  testo_1:
+    label: testo di primo livello
     type:  textarea
+    width: 1/2
+ 
+  testo_2:
+    label: testo di secondo livello
+    type:  textarea
+    width: 1/2
+
+  line:
+    type: line
+ 
+  galleria:
+    label: galleria immagini (16/9)
+    type:  gallery
+
+  line_2:
+    type: line
+
+interazioni:
+    label: inserisci qui le interazioni che utilizzano dei form 
+    type: structure
+    fields:
+      titolo:
+        label: titolo
+        type: text
+      url:
+        label: url di destinazione
+        type: text
+      categoria:
+        label: categoria
+        type: checkboxes
+        options:
+          uno: uno
+          due: due
+          tre: tre
+          
 
   

@@ -2,11 +2,22 @@ title: blog
 pages: true
 pages:
   templates:
-    -spazio
+    -articolo
 fields:
   title:
     label: Title
     type:  text
+    width: 3/4
+ 
+  valore:
+    label: quanti post vuoi vedere?
+    type: number
+    width: 1/4 
+
   text:
     label: Text
     type:  textarea
+
+
+
+

@@ -4,9 +4,34 @@ files: true
   
 fields:
   title:
-    label: Title
+    label: titolo
     type:  text
-  text:
-    label: Text
+
+  descrizione:
+    label: descrizione servizio
     type:  textarea
+
+  link:
+    label: url di destinazione
+    type: url
+
+  image:
+    label: icona o immagine
+    type: image 
+
+  touchpoint:
+    label: inserisci qui le informazioni di contatto 
+    type: structure
+    fields:
+      nome: 
+        label: nome
+        type: text
+      mail:
+        label: mail 
+        type: email
+      descrizione:
+        label: ruolo
+        type: text
+        
+
   

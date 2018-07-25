@@ -3,10 +3,27 @@ pages: false
 files: true
   
 fields:
-  title:
-    label: Title
+  titolo:
+    label: Titolo
     type:  text
-  text:
-    label: Text
+
+  descrizione:
+    label: descrizione
     type:  textarea
   
+  galleria:
+    label: galleria immagini (16/9)
+    type:  gallery
+
+  prenotazione:
+    label: link per prenotazione
+    type: url
+    width: 1/2
+
+  mail:
+    label: mail di contatto
+    type: email
+    width: 1/2
+
+
+

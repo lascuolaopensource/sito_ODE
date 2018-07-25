@@ -6,7 +6,21 @@ fields:
   title:
     label: Title
     type:  text
+    
   text:
     label: Text
     type:  textarea
+
+  faq:
+    label: domande frequenti
+    type: structure
+    fields:
+      domanda:
+        label: domanda
+        type: textarea
+      risposta:
+        label: risposta
+        type: textarea
+
+
   

@@ -4,9 +4,28 @@ files: true
   
 fields:
   title:
-    label: Title
+    label: nome dello spazio
     type:  text
-  text:
-    label: Text
+
+  descrizione:
+    label: descrizione dello spazio
     type:  textarea
+
+  galleria:
+    label: galleria immagini (16/9)
+    type:  gallery
+
+  tariffario:
+    label: tariffario
+    type:  textarea
+    width: 1/2
+
+  dotazione:
+    label: dotazione
+    type:  textarea
+    width: 1/2
+
+  coworking:
+    label: spunta se questo spazio è usabile per il coworking
+    type: checkbox
   
