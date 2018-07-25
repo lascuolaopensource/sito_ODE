@@ -9,6 +9,28 @@ fields:
   text:
     label: Text
     type:  textarea
-
+  summary:
+      label: Nome dell'evento
+      type: text
+  description:
+      label: Descrizione
+      type: textarea
+      size: small
+  _begin_date:
+      label: Data d'inizio
+      type: date
+      format: MM/DD/YYYY
+  _begin_time:
+      label: Ora d'inizio
+      type: time
+      interval: 15
+  _end_date:
+      label: Data fine
+      type: date
+      format: MM/DD/YYYY
+  _end_time:
+      label: Ora fine
+      type: time
+      interval: 15
 
   

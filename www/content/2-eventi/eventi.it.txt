@@ -1,0 +1,17 @@
+Title: eventi
+
+----
+
+Text: tutti i bellissimi eventi dell'officina degli esordi
+
+----
+
+Calendar: 
+
+- 
+  summary: birra gratis
+  description: peroni a zero euro
+  _begin_date: 2018-07-25
+  _begin_time: 15:00
+  _end_date: 2018-07-26
+  _end_time: 02:00
