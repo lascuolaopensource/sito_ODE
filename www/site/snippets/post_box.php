@@ -1,7 +1,7 @@
-<div class="post_box">
-    <img class="post_box_bg" src="" alt="">
-    <span><?= $titolo ?></span>
-    <span><?= $sottotitolo ?></span>
-    <span><?= $autore ?></span>
-    <span><?= $data ?></span>
-</div>
+<a href="<?= $url ?>" class="post_box full has_bg">
+    <?= $bg ?>
+    <span class="post_box_detail" ><?= $titolo ?></span>
+    <span class="post_box_detail" ><?= $sottotitolo ?></span>
+    <span class="post_box_detail" ><?= $autore ?></span>
+    <span class="post_box_detail" ><?= $data ?></span>
+</a>

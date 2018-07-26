@@ -11,9 +11,9 @@ fields:
     label: descrizione
     type:  textarea
   
-  galleria:
-    label: galleria immagini (16/9)
-    type:  gallery
+  cover:
+    label: immagine di copertina (16/9)
+    type:  image
     
   line:
     type: line

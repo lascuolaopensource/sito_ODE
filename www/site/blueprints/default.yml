@@ -17,10 +17,6 @@ fields:
 
   line:
     type: line
- 
-  galleria:
-    label: galleria immagini (16/9)
-    type:  gallery
 
   line_2:
     type: line

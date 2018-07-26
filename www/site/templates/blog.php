@@ -7,6 +7,7 @@
         <li class="nav_blog_item" >Soggetto</li>
         <li class="nav_blog_item" >Soggetto</li>
         <li class="nav_blog_item" >Soggetto</li>
+        <input type="text" name="search" id="search">
     </ul>
 </nav>
 <div class="container">

@@ -5,6 +5,7 @@
     $titolo = $page->titolo()->html();
     $data = $page->datetime();
     $cover = $page->image($page->cover())->url();    
+    $bg = $page->cover()->toFile();    
     $autore = $page->autore()->html();
     $testo = $page->testo()->html();
     $galleria = $page->galleria()->toStructure();
@@ -12,9 +13,9 @@
     $link = $page->url();
     $tags = $page->tags();
 ?>
-<div class="cover">
-    <img class="cover_bg" src="<?= $cover ?>" alt="">
-    <div class="container">
+<div class="cover has_bg">
+    <?= $bg ?>
+    <div class="container cover_content">
         <h1 class="cover_title"><?= $titolo ?></h1>
         <h6 class="cover_subtitle"><?= $autore ?></h6>
         <hr>
