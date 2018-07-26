@@ -18,17 +18,5 @@ if($items->count()):
 <h1 class="titolo"><?php echo $page->title()->html() ?></h1>
 <p class="paragrafo"><?= $page->text()->html() ?></p>
 
-<?php $calendar = calendar(page('eventi')->calendar()->yaml()); ?>
-
-<?php
-	snippet('calendar-table', array(
-        'calendar'	=> $calendar,
-		'fields'		=> array(
-            'summary'		=> l::get('title'),
-			'description'	=> l::get('description')
-            )
-        ));
-        ?>
-
 </div> <!-- .container -->
 <?php snippet('footer') ?>
