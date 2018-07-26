@@ -28,7 +28,7 @@ fields:
 
   testo:
     label: testo dell'articolo
-    type: text
+    type: textarea
 
   galleria:
     label: galleria immagini (16/9)

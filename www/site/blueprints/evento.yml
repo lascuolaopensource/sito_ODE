@@ -7,7 +7,6 @@ fields:
   title:
    label: Titolo
    type:  text
-   width: 1/2
 
   luogo:
    label: Dove si svolge questa attività?
@@ -22,7 +21,12 @@ fields:
      sei: sei
      sette: sette
    columns: 5
-   
+
+  soggetto:
+   label: Chi cura/organizza l'attività?
+   type:  text
+   width: 1/2
+
   categoria:
    label: categoria
    type: radio
