@@ -16,8 +16,14 @@ fields:
     type:  gallery
 
   video:
-    label: url del video
+    label: eventuale video (inserire URL)
     type:  url
+    width: 1/2
+
+  link:
+    label: eventuale sito web (inserire URL)
+    type:  url
+    width: 1/2
 
   cosafai:
     label: servizi offerti

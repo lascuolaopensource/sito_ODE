@@ -3,8 +3,8 @@ pages: false
 files: true
   
 fields:
-  coworking:
-    label: coworking
+  title:
+    label: nome del coworking
     type:  text
 
   descrizione:
