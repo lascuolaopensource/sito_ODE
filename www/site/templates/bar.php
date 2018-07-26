@@ -4,9 +4,9 @@
 <?php
     $titolo = $page->title()->html();
     $descrizione = $page->descrizione()->html();
-    $link = $page->link();
-    $image = $page->image();
-    $touchpoint = $page->touchpoint()->toStructure();
+    $offerta = $page->offerta()->toStructure();
+    $mail = $page->mail();
+    $orario = $page->orario()->html();
 ?>
 
 

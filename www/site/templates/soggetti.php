@@ -1,6 +1,11 @@
 <?php snippet('header') ?>
 
-<h1 class="titolo"><?php echo $page->title()->html() ?></h1>
-<p class="paragrafo"><?= $page->text()->html() ?></p>
+
+<?php
+    $titolo = $page->title()->html();
+    $descrizione = $page->text()->html();
+    $azioni = $page->children()->visible();
+?>
+
 
 <?php snippet('footer') ?>

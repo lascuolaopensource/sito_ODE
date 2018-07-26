@@ -4,7 +4,7 @@
 <?php
     $titolo = $page->title()->html();
     $descrizione = $page->text()->html();
-    $azioni = $page->children()->visible();
+    $spazi = $page->children()->visible();
 ?>
 
 

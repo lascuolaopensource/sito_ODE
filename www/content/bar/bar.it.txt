@@ -1,0 +1,25 @@
+Title: bar
+
+----
+
+Descrizione: 
+
+----
+
+Menu: 
+
+----
+
+Line: 
+
+----
+
+Offerta: 
+
+----
+
+Mail: 
+
+----
+
+Orario: 

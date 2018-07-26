@@ -18,6 +18,12 @@ fields:
   video:
     label: url del video
     type:  url
+    width: 1/2
+
+  link:
+    label: url del soggetto
+    type:  url
+    width: 1/2
 
   cosafai:
     label: servizi offerti

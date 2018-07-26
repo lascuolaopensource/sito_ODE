@@ -1,10 +1,10 @@
 <?php snippet('header') ?>
 
 
-<?php
-    $titolo = $page->title()->html();
+<?php 
+    $titolo = $page->title();
     $descrizione = $page->text()->html();
-    $azioni = $page->children()->visible();
+    $faq = $page->faq()->toStructure();
 ?>
 
 

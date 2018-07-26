@@ -1,8 +1,7 @@
 title: servizi
 pages: true
 pages:
-  templates:
-    -servizio
+  template: servizio
 fields:
   title:
     label: Title

@@ -34,6 +34,10 @@ fields:
         options: 
           food: food
           drink: drink
+      visible:
+        label: spunta se oggi è previsto
+        type: checkbox
+
   line:
     type: line
 

@@ -1,8 +1,7 @@
 title: spazi
 pages: true
 pages:
-  templates:
-    -spazio
+  template: spazio
 fields:
   title:
     label: Title
