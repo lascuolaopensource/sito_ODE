@@ -7,19 +7,3 @@ Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod te
 ----
 
 Valore: 5
-
-----
-
-Testo-1: 
-
-----
-
-Testo-2: 
-
-----
-
-Galleria: 
-
-----
-
-Interazioni: 

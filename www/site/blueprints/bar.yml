@@ -27,15 +27,8 @@ fields:
       prezzo:
         label: prezzo
         type: text
-      tipologia:
-        label: food/drink
-        type: radio
-        columns: 2
-        options: 
-          food: food
-          drink: drink
-      visible:
-        label: spunta se oggi è previsto
+      visibile:
+        label: spunta se questo piatto oggi verrà preparato
         type: checkbox
 
   line:

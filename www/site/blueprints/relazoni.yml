@@ -1,7 +1,8 @@
 title: relazioni
 pages: true
 pages:
-  template: relazione
+  templates:
+    -relazione
 fields:
   title:
     label: Title

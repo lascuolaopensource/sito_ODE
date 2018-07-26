@@ -1,7 +1,8 @@
 title: eventi
 pages: true
 pages:
-  template: evento
+  templates:
+    -evento
 fields:
   title:
     label: Title
@@ -9,35 +10,3 @@ fields:
   text:
     label: Text
     type:  textarea
-  calendar:
-      label: Calendario
-      type: structure
-      entry: >
-          <strong>{{summary}}</strong><br>
-          {{description}}<br>
-          Beginning: {{_begin_date}} {{_begin_time}}<br>
-          End: {{_end_date}} {{_end_time}}
-      fields:
-          summary:
-              label: Nome dell'evento
-              type: text
-          description:
-              label: Descrizione
-              type: textarea
-              size: small
-          _begin_date:
-              label: Data d'inizio
-              type: date
-              format: MM/DD/YYYY
-          _begin_time:
-              label: Ora d'inizio
-              type: time
-              interval: 15
-          _end_date:
-              label: Data fine
-              type: date
-              format: MM/DD/YYYY
-          _end_time:
-              label: Ora fine
-              type: time
-              interval: 15

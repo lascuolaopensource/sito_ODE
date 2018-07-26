@@ -16,12 +16,12 @@ fields:
     type:  gallery
 
   video:
-    label: url del video
+    label: eventuale video (inserire URL)
     type:  url
     width: 1/2
 
   link:
-    label: url del soggetto
+    label: eventuale sito web (inserire URL)
     type:  url
     width: 1/2
 

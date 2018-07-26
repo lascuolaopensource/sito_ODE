@@ -12,15 +12,26 @@
     $link = $page->url();
     $tags = $page->tags();
 ?>
+<div class="cover">
+    <img class="cover_bg" src="<?= $cover ?>" alt="">
+    <div class="container">
+        <h1 class="cover_title"><?= $titolo ?></h1>
+        <h6 class="cover_subtitle"><?= $autore ?></h6>
+        <hr>
+        <h6 class="cover_subtitle"><?= $data ?></h6>
+        <div class="tagfilters">
+            <?php foreach($tags as $tag): ?>
+            
+            <a href="/blog/tag:<?php echo $tag ?>" class="tag">#<?php echo $tag ?></a>
 
-<div class="tagfilters">
-    <?php foreach($tags as $tag): ?>
-    
-    <a href="/blog/tag:<?php echo $tag ?>" class="tag">#<?php echo $tag ?></a>
-
-    <?php endforeach; ?>
+            <?php endforeach; ?>
+        </div>
+    </div>
 </div>
-<h1 class="titolo"><?php echo $page->title()->html() ?></h1>
-<p class="paragrafo"><?= $page->text()->html() ?></p>
+<div class="container">
+    <p class="paragrafo"><?= $page->testo() ?></p>
+    <div class="related_articles">
+    </div>
+</div>
 
 <?php snippet('footer') ?>

@@ -1,28 +1,36 @@
 <?php snippet('header') ?>
 
-<h1 class="titolo"><?php echo $page->title()->html() ?></h1>
-<p class="paragrafo"><?= $page->text()->html() ?></p>
+<nav class="nav_blog">
+    <ul class="nav_blog_list container">
+        <li class="nav_blog_item" >Soggetto</li>
+        <li class="nav_blog_item" >Soggetto</li>
+        <li class="nav_blog_item" >Soggetto</li>
+        <li class="nav_blog_item" >Soggetto</li>
+        <li class="nav_blog_item" >Soggetto</li>
+    </ul>
+</nav>
+<div class="container">
+
+    <h1 class="titolo"><?php echo $page->title()->html() ?></h1>
+    <p class="paragrafo"><?= $page->text()->html() ?></p>
 
 <?php
     $posts = $page->children()->visible();
     ?>
-    <div class="articles">
-        <?php
-            foreach( $posts as $post ) { 
-                ?>
-            <div class="article">
-                    <div class="artilce_header">
-                        <h1><?= $post->titolo() ?></h1>
-                        <p><?= $post->autore() ?></p>
-                    </div>
-                    <div class="article_content">
-                        <p><?= $post->testo()->markdown() ?></p>
-                    </div>
+    <div class="posts">
+        <div class="main_posts">
+            <div class="main_posts_left">
+                <?php snippet('post_big',array( 'post'=> $posts->first() )); ?>
             </div>
-            <?php 
-            }
+            <div class="main_posts_right">
+                <?php snippet('post_small',array( 'post'=> $posts->first() )); ?>
+                <?php snippet('post_small',array( 'post'=> $posts->first() )); ?>
+            </div>
+        </div>
+        <?php
+            snippet('post_list',array('list'=>$posts));
         ?>
     </div>
-
+</div>
 
 <?php snippet('footer') ?>

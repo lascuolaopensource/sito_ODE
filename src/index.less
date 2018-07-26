@@ -39,6 +39,18 @@ body {
     }
 }
 
+.nav_blog{
+    width: 100%;
+    padding: 10px 0; 
+    .nav_blog_list{
+        list-style: none;
+        .nav_blog_item{
+            display: inline-block;
+            margin: 0 15px;
+        }
+    }
+}
+
 .header{
     width: 100%;
     background-color: lightblue;
@@ -47,4 +59,75 @@ body {
     width: 100%;
     background-color: darksalmon;
     color: white;
+}
+
+.flex_sidebar_layout{
+    display: flex;
+    flex-direction: row;
+}
+.sidebar{
+    width: 20vw;
+    padding: 15px;
+    background-color: beige;
+    ul{
+        list-style: none
+    }
+}
+.content_list{
+    padding: 15px;
+    width: 80vw;
+}
+
+.post_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.main_posts{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.main_posts_left{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+.main_posts_right{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+.post_box{
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.post_big{
+    width: 100%;
+    height: 150px;
+    border: 1px solid red;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.post_small{
+    width: 100%;
+    height: 50px;
+    border: 1px solid red;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
