@@ -1,8 +1,8 @@
 title: soggetti
 pages: true
 pages:
-  templates:
-    -soggetto
+  template:
+    - soggetto
 fields:
   title:
     label: Title
