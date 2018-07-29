@@ -37,6 +37,7 @@ $grigiochiaro : #f0f0f0;
         text-shadow: none;
     }
 }
+
 div.actions{
     width:100%;
     margin-top:60px;
@@ -275,6 +276,22 @@ div.message{
     font-size:0.66em;
     }
 }
+a.soggetto{
+}
+div.elemento_soggetto{
+    width:33%!important;
+    border-top:1px black solid;
+    padding:15px;
+    a.more_events{
+        margin:1em;
+        margin-left:0;
+    }
+}
+div.container.padding{
+    padding:15px;
+    display:flex;
+    flex-wrap:wrap;
+}
 a.more_events{
     background-color:white;
     padding:10px;
@@ -332,7 +349,7 @@ div.elemento_cowo{
     width:50%;
 }
 h1.testata{
-    font-size:15vw;    
+    font-size:12vw;    
     line-height:1em;
     margin:0;
     font-family: 'LIB-2';
@@ -342,6 +359,7 @@ h1.testata{
     @media only screen and (max-width: 900px) {
     }
 }
+
 .container.calltoaction{
     padding-bottom:5%!important;
     padding-top:5%!important;
