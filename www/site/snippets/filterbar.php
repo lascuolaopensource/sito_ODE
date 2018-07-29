@@ -1,12 +1,110 @@
 <div class="filterbar">
-        <ul>
-            <li><a href="#corso_filter">corso</a></li>
-            <li><a href="#workshop_filter">workshop</a></li>
-            <li><a href="#laboratorio_filter">laboratorio</a></li>
-            <li><a href="#mostra_filter">mostra</a></li>
-            <li><a href="#reading_filter">reading</a></li>
-            <li><a href="#concerto_filter">concerto</a></li>
-            <li><a href="#jam_filter">jam</a></li>
-            <li><a href="#evento_filter">evento</a></li>
-        </ul>
+<ul>
+
+    <?php if($tag = param('tag')): ?>
+        <?php if($tag == "corso"): ?>
+        <li class="button active">
+        <?php else: ?>
+        <li class="button">
+        <?php endif; ?>
+    <?php else: ?>
+        <li class="button">
+    <?php endif ?>   
+        <a href="/eventi/tag:corso">corso</a>
+    </li>
+    
+    <?php if($tag = param('tag')): ?>
+        <?php if($tag == "workshop"): ?>
+        <li class="button active">
+        <?php else: ?>
+        <li class="button">
+        <?php endif; ?>
+    <?php else: ?>
+        <li class="button">
+    <?php endif ?>   
+        <a href="/eventi/tag:workshop">workshop</a>
+    </li>
+
+
+    <?php if($tag = param('tag')): ?>
+        <?php if($tag == "laboratorio"): ?>
+        <li class="button active">
+        <?php else: ?>
+        <li class="button">
+        <?php endif; ?>
+    <?php else: ?>
+        <li class="button">
+    <?php endif ?>   
+        <a href="/eventi/tag:laboratorio">laboratorio</a>
+    </li>
+    
+    <?php if($tag = param('tag')): ?>
+        <?php if($tag == "mostra"): ?>
+        <li class="button active">
+        <?php else: ?>
+        <li class="button">
+        <?php endif; ?>
+    <?php else: ?>
+        <li class="button">
+    <?php endif ?>   
+        <a href="/eventi/tag:mostra">mostra</a>
+    </li>
+    
+    <?php if($tag = param('tag')): ?>
+        <?php if($tag == "reading"): ?>
+        <li class="button active">
+        <?php else: ?>
+        <li class="button">
+        <?php endif; ?>
+    <?php else: ?>
+        <li class="button">
+    <?php endif ?>   
+        <a href="/eventi/tag:reading">reading</a>
+    </li>
+    
+    <?php if($tag = param('tag')): ?>
+        <?php if($tag == "concerto"): ?>
+        <li class="button active">
+        <?php else: ?>
+        <li class="button">
+        <?php endif; ?>
+    <?php else: ?>
+        <li class="button">
+    <?php endif ?>   
+        <a href="/eventi/tag:concerto">concerto</a>
+    </li>
+    
+    <?php if($tag = param('tag')): ?>
+        <?php if($tag == "jam"): ?>
+        <li class="button active">
+        <?php else: ?>
+        <li class="button">
+        <?php endif; ?>
+    <?php else: ?>
+        <li class="button">
+    <?php endif ?>   
+        <a href="/eventi/tag:jam">jam</a>
+    </li>
+    
+    <?php if($tag = param('tag')): ?>
+        <?php if($tag == "evento"): ?>
+        <li class="button active">
+        <?php else: ?>
+        <li class="button">
+        <?php endif; ?>
+    <?php else: ?>
+        <li class="button">
+    <?php endif ?>   
+        <a href="/eventi/tag:evento">evento</a>
+    </li>
+
+    <?php if(!$tag = param('tag')): ?>
+    <li class="button active">
+    <?php else: ?>
+    <li class="button">
+    <?php endif; ?>
+        <a href="/eventi/">tutti</a>
+    </li>
+</ul>
+
 </div>

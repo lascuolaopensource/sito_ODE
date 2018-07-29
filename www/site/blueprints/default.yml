@@ -5,7 +5,36 @@ fields:
     label: Title
     type:  text
 
-  testo:
+  testo_1:
     label: testo di primo livello
     type:  textarea
     width: 1/2
+ 
+  testo_2:
+    label: testo di secondo livello
+    type:  textarea
+    width: 1/2
+
+  line:
+    type: line
+
+  interazioni:
+    label: inserisci qui le interazioni che utilizzano dei form 
+    type: structure
+    fields:
+      titolo:
+        label: titolo
+        type: text
+      url:
+        label: url di destinazione
+        type: text
+      categoria:
+        label: categoria
+        type: checkboxes
+        options:
+          uno: uno
+          due: due
+          tre: tre
+          
+
+  

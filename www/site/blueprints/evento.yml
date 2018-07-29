@@ -12,6 +12,7 @@ fields:
    label: Dove si svolge questa attività?
    width: 1/2
    type: select
+   required: true
    options:
      uno: uno
      due: due
@@ -25,6 +26,7 @@ fields:
   soggetto:
    label: Chi cura/organizza l'attività?
    type:  text
+   required: true
    width: 1/2
 
   categoria:

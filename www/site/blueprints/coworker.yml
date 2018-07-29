@@ -1,0 +1,42 @@
+title: coworker
+pages: false
+files: true
+
+fields:
+  title:
+    label: nome soggetto
+    type:  text
+
+  chisei:
+    label: chi sei
+    type:  textarea
+
+  galleria:
+    label: galleria immagini (16/9)
+    type:  gallery
+
+  video:
+    label: eventuale video (inserire URL)
+    type:  url
+    width: 1/2
+
+  link:
+    label: eventuale sito web (inserire URL)
+    type:  url
+    width: 1/2
+
+  cosafai:
+    label: servizi offerti
+    type:  textarea
+    width: 1/2
+
+  value:
+    label: value proposition
+    type:  textarea
+    width: 1/2
+
+  tags:
+   label: tags
+   type:  tags
+
+
