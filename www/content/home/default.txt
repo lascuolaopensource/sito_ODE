@@ -14,9 +14,9 @@ Testo-2:
 
 Benvenuti a casa,
 
-Officina degli Esordi è **uno spazio a disposizione delle persone:** il <u>Laboratorio Urbano</u> della città di Bari, aperto a tutti, dove è possibile sviluppare le proprie passioni, acquisire nuove competenze e realizzare ciò che si desidera insieme agli altri.
+Officina degli Esordi è uno spazio a disposizione delle persone: il <u>Laboratorio Urbano</u> della città di Bari, aperto a tutti, dove è possibile sviluppare le proprie passioni, acquisire nuove competenze e realizzare ciò che si desidera insieme agli altri.
 
-Qui la condivisione della conoscenza avviene attraverso l’esperienza diretta: attività ed eventi sono finalizzati alla promozione socioculturale **nel quartiere Libertà**. 
+Qui la condivisione della conoscenza avviene attraverso l’esperienza diretta: attività ed eventi sono finalizzati alla promozione socioculturale <u>nel quartiere Libertà.</u> 
 
 Officina degli Esordi è una piazza in cui si incontrano e si contaminano soggetti diversi: singole persone, gruppi informali, associazioni, imprenditoria culturale e amministrazione comunale. 
 

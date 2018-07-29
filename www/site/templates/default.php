@@ -6,7 +6,7 @@
             <?= $page->testo_1()->kirbytext() ?>
             </h2>
             <p class="second">
-            <?= $page->testo_2() ?>
+            <?= $page->testo_2()->text() ?>
             </p>
         </div>
     </section>
@@ -49,23 +49,21 @@
         </div>
     </section>
     <section>
-        <div class="container flex_column_layout">
-            <h1>Coworking</h1>
-            <?php 
-                $cw_desc = page('coworking')->descrizione()->html();
-                ?>
-            <p><?= $cw_desc ?></p>
+        <div class="container flex_column_layout coworking">
+           <div class="box">
+               <img src="/assets/images/1_color.png">
+               <div class="message">
+                <h1>Coworking</h1>
+                <?php 
+                    $cw_desc = page('coworking')->descrizione()->html();
+                    ?>
+                <p><?= excerpt($cw_desc->kirbytext(), 140) ?></p>
+                <a class="more_events coworking" href="/coworking" title="coworking">scopri di più</a>
+                </div>
+           </div>
         </div>
     </section>
-    <section>
-        <div class="container flex_column_layout">
-            <?php $soggetti = page('soggetti')->children()->visible(); ?>
-            <h1>Soggetti</h1>
-            <?php
-                snippet('soggetti_home_list', array('list' => $soggetti ) );
-                ?>
-        </div>
-    </section>
+
     <section>
         <div class="container flex_column_layout">
             <h1>Blog</h1>
@@ -75,6 +73,8 @@
                 ?>
         </div>
     </section>
+
+
     <section>
         <div class="container flex_column_layout">
             <h1>Contatti</h1>
