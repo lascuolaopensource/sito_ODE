@@ -70,6 +70,15 @@ a.extreme{
     padding-bottom:15px;
     }
 }
+strong{
+    color: $colore;
+}
+u{
+    text-decoration:none;
+    color: $colore;
+    background-color: $colore_due;
+    padding:1%;
+}
 h2.first{
     font-size:3em;
     font-family:'LIB-1';

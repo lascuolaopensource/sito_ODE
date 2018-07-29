@@ -3,7 +3,7 @@
     <section>
         <div class="margini container flex_column_layout">
             <h2 class="first">
-            <?= $page->testo_1() ?>
+            <?= $page->testo_1()->kirbytext() ?>
             </h2>
             <p class="second">
             <?= $page->testo_2() ?>
