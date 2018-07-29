@@ -11,6 +11,10 @@ fields:
    validate:
      maxLength: 140
 
+  footertext:
+   label: Testo di contatto nel footer
+   type:  textarea
+
   tags:
    label: Tags per google
    type:  tags

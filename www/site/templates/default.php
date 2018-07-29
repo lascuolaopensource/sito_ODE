@@ -40,8 +40,9 @@
     </section>
 
     <section>
-        <div class="container flex_column_layout">
-            <h2>
+        <div class="container flex_column_layout negativo">
+            <h1>Scopri Officina</h1>
+            <h2 class="extreme-container">
             <a class="extreme" title="servizi" href="/servizi">→ servizi</a>
             <br>
             <a class="extreme" title="spazi" href="/spazi">→ spazi</a> 
@@ -58,30 +59,44 @@
                     $cw_desc = page('coworking')->descrizione()->html();
                     ?>
                 <p><?= excerpt($cw_desc->kirbytext(), 140) ?></p>
-                <a class="more_events coworking" href="/coworking" title="coworking">scopri di più</a>
+                <a class="more_events coworking" href="/coworking" title="coworking">maggiori informazioni</a>
                 </div>
            </div>
         </div>
     </section>
 
     <section>
-        <div class="container flex_column_layout">
-            <h1>Blog</h1>
-            <?php
-                $posts = page('blog')->children()->visible()->limit(8);
-                snippet('post_home_list',array('list'=>$posts));
-                ?>
+    <div class="container flex_column_layout">
+        <h1>L'ultima notizia</h1><br>
+        
+        <div class="post-home">
+        
+            <a class="none" href="<?= page('blog')->children()->visible()->last()->url() ?>">
+            <div class="sx">
+                <?= page('blog')->children()->visible()->last()->cover()->toFile(); ?>
+            </div>
+
+            <div class="dx">
+                <h2 class="titolino"><?= page('blog')->children()->visible()->last()->title() ?></h2>
+
+                <p class="descrizione">
+                <?= excerpt(page('blog')->children()->visible()->last()->testo()->kirbytext(), 140) ?>
+                </p>
+
+                <h5 class="autore"><?= page('blog')->children()->visible()->last()->autore() ?>
+                </h5>
+                <?php foreach(page('blog')->children()->visible()->last()->tags() as $tag): ?>
+                <?php endforeach; ?>
+            </div>
+            </a>
         </div>
+
+        <a class="more_events" href="/blog" title="vedi tutti">altre notizie</a>
+
+    </div>
     </section>
 
 
-    <section>
-        <div class="container flex_column_layout">
-            <h1>Contatti</h1>
-        </div>
-    </section>
-    
-    
 
 </div> <!-- .container -->
 <?php snippet('footer') ?>

@@ -6,4 +6,4 @@ Valore: 3
 
 ----
 
-Text: ciao
+Text: 

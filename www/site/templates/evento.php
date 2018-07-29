@@ -1,6 +1,7 @@
 <?php snippet('header'); ?>
 <div class="events_list">
 <?php
+    $bg = $page->cover()->toFile();    
     $titolo = $page->title()->html();
     $luogo = $page->luogo()->yaml();
     $soggetto = $page->soggetto()->html();
@@ -14,7 +15,7 @@
     $excel_key = $page->excel_key()->html();
     $durata = $page->durata()->html();
     $deadline = $page->deadline()->html();
-    $nextdate = $page->nextdate()->html();
+    $nextdate = strtotime($page->nextdate());
     $appuntamenti = $page->appuntamenti()->toStructure();
     $ospiti = $page->ospiti()->html();
     $num_min = $page->num_min()->html();
@@ -23,24 +24,32 @@
     $audience = $page->audience()->yaml();
     //$image = $page->image()->toFile();
     ?>
-    <div class="container">
-        
-        <div class="evento_singolo" id="<?= $titolo ?>_item" >
-            <div class="info" style="background-image:url('<?= $page->image($cover)->url() ?>')">
-                <div class="category"><?= $categoria ?></div>
-                <h1><?= $titolo ?></h1>
-                <p>Organizzato da: <?= $soggetto ?></p>
-                <p>presso: <?= $luogo[0] ?></p>
-                <p class="price">€<?= $prezzo ?></p>
-                <p>a chi è rivolto: <?= $audience[0] ?></p>
-                <div class="tags"><?= $tags ?></div>
-            </div>
-            <div class="detail">
-                <div class="program">
-                    <p><?= $programma ?></p>
-                </div>
-            </div>
+    <div class="cover has_bg">
+    <?= $bg ?>
+    <div class="container cover_content">
+        <h1 class="cover_title"><?= $titolo ?></h1>
+        <hr>
+        <div class="tagfilters">
+            <a href="/eventi/tag:workshop" class="tag">#<?php echo $categoria ?></a>
         </div>
     </div>
 </div>
+    <h2 class="data">
+        <?= date('d/m/Y', $nextdate) ?> 
+    </h2>
+<div class="flexbox">
+    <div class="element">
+    <p class="informations">Questa attività si svolge presso lo spazio <?= $page->luogo() ?> ed è curato da <?= $page->soggetto() ?>.</p>
+    <?php if($prezzo->isNotEmpty()): ?>
+    Questa attività dura <?= $durata ?> H ed ha un costo di <?= $prezzo ?> euro.
+    <?php else: ?>
+    Questa attività è gratuita.
+    <?php endif; ?>
+    </div>
+
+    <div class="element">
+
+    </div>
+</div>
+
 <?php snippet('footer'); ?>
