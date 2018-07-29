@@ -16,12 +16,25 @@
     <h1 class="testata">
         <?= $page->title() ?>
     </h1>
-    <p class="description"><?= $descrizione->kirbytext() ?></p>
-
 </section>
 
-
-<?php snippet('footer') ?>
-
+<div class="container padding">
+<?php foreach($page->children()->sortBy('title')->flip() as $soggetto): ?>
+    <div class="elemento_soggetto">
+    <a href="<?= $soggetto->link() ?>" title="<?= $soggetto->title() ?>" class="soggetto" ?><h2 class="nome"><?= $soggetto->title() ?></h2></a>
+        <p class="description">
+        <?= $soggetto->chisei()->text() ?><br>
+        <?php if($soggetto->touchpoint()->isNotEmpty()): ?>
+            <div class="flexbox">
+            <?php foreach($soggetto->touchpoint()->toStructure() as $contatto): ?><br>
+                <a class="more_events" href="mailto:<?= $contatto->mail() ?>">@ <?= $contatto->nome()?></a>
+            <?php endforeach; ?>
+                <a class="more_events" href="<?= $soggetto->link() ?>">→ www</a>
+            </div>
+        <?php endif; ?>
+        </p>
+    </div>
+<?php endforeach; ?>
+</div>
 
 <?php snippet('footer') ?>
