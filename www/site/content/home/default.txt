@@ -1,0 +1,47 @@
+Title: home
+
+----
+
+Testo: 
+
+----
+
+Testo-1: **3000 mq di spazi**: 5 sale prove, 4 aziende creative residenti, 2 terrazze, 2 aree workshop, 2 sale food/drink, hackerspace service, libreria, copisteria interna, area coworking, bar, ristorante, <u>parcheggio sempre a disposizione.</u>
+
+----
+
+Testo-2: 
+
+Benvenuti a casa,
+
+Officina degli Esordi è uno spazio a disposizione delle persone: il <u>Laboratorio Urbano</u> della città di Bari, aperto a tutti, dove è possibile sviluppare le proprie passioni, acquisire nuove competenze e realizzare ciò che si desidera insieme agli altri.
+
+Qui la condivisione della conoscenza avviene attraverso l’esperienza diretta: attività ed eventi sono finalizzati alla promozione socioculturale <u>nel quartiere Libertà.</u> 
+
+Officina degli Esordi è una piazza in cui si incontrano e si contaminano soggetti diversi: singole persone, gruppi informali, associazioni, imprenditoria culturale e amministrazione comunale. 
+
+La creatività emerge dall’incontro tra persone diverse: il potenziale degli abitanti si moltiplica e fa in modo che immaginare il futuro diventi una pratica quotidiana e condivisa.
+
+Lo sviluppo e la cura di relazioni positive si fa motore per la sperimentazione di linguaggi espressivi. In questo fare comune e plurale, l’attenzione si sposta dalla meta da raggiungere al viaggio che si sta compiendo.
+
+Ti aspettiamo!
+
+----
+
+Interazioni: 
+
+- 
+  titolo: prenota uno spazio
+  url: >
+    https://docs.google.com/forms/d/e/1FAIpQLSdv7V0X-FiLafTewr7OtpeF3up9qET7FHNBf62Npv9weS3Nvg/viewform
+  categoria: uno
+- 
+  titolo: "proponi un'attività"
+  url: >
+    https://docs.google.com/forms/d/1IZT1IYHQE3zct_auHseAKLfbL89DSRlL-3_vs9DyBPk/edit?usp=sharing
+  categoria: due
+- 
+  titolo: diventa coworker
+  url: >
+    https://docs.google.com/forms/d/1hI189LMcGwItcPtjTaaCtTM1JUyhV-AmFS5OPr0gDsg/viewform?edit_requested=true
+  categoria: tre

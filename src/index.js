@@ -1,9 +1,15 @@
 import $ from 'jquery';
+window.jQuery = $;
+
 import initMap from "./modules/mappa.js";
 import { loadScriptAsync } from "./modules/utility.js";
 import {tns} from '../node_modules/tiny-slider/src/tiny-slider';
+import './modules/sticky-kit.js';
 
 $(document).ready(function(){
+  
+  $('.sticky_info').stick_in_parent();
+
   tns({
     container: '.gallery',
     slideBy: 'page',
