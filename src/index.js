@@ -10,7 +10,12 @@ $(document).ready(function(){
       initMap();      
     }
   });
-    
+  
+   $(".btn-responsive-menu").click(function() {
+    console.log('click');
+     $("#mainmenu").toggleClass("show");
+   });
+
     $('.post_list_view_filter').click(function(e){
         e.preventDefault();
         const viewStyle = $(e.target).data('view-style');

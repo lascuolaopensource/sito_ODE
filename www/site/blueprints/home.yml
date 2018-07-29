@@ -17,10 +17,7 @@ fields:
 
   line:
     type: line
-
-  line_2:
-    type: line
-
+    
   interazioni:
     label: inserisci qui le interazioni che utilizzano dei form 
     type: structure

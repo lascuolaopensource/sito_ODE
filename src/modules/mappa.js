@@ -31,7 +31,7 @@ export default function initMap() {
           });
 
           $.ajax({
-            url: "/relazioni/?q=*",
+            url: "/relazioni/?q=all",
           }).done(function(data) {
             addMarkers(data);
             stampaRisultatiQueryDoveSiamo(data);

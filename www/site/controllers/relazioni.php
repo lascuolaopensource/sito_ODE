@@ -11,7 +11,11 @@ return function($site, $pages, $page) {
 
   $query   = get('q');
 	if(isset($query)):  
+		if($query == "all"):
+		$results = $page->children();
+		else:
 		$results = $page->children()->search($query,'title|cap|location');
+		endif;
 	else:
 		$results = $page->children();
 	endif;

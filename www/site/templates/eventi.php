@@ -1,8 +1,12 @@
 <?php snippet('header') ?>
 
-<?php
-    $eventi = page('eventi')->children()->visible();
-?>
+
+<?php if($tag = param('tag')): ?>
+<?php $eventi = page('eventi')->children()->visible()->filterBy('categoria', $tag); ?>
+<?php else: ?>
+<?php $eventi = page('eventi')->children()->visible(); ?>
+<?php endif ?>
+
 <div class="flex_column_layout container">
         
         <?php
