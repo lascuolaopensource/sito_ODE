@@ -9,7 +9,7 @@ export default function initMap() {
           // for display.
           const map = new google.maps.Map(document.getElementById('map_dovesiamo'), {
             center: myLatLng,
-            zoom: 17,
+            zoom: 14,
             styles: styleMappa
           });
 
@@ -159,7 +159,7 @@ export default function initMap() {
               const position = {lat: +dataset['lat'],
                                 lng: +dataset['lng']};
               console.log(position);
-              window.dovesiamomap.setOptions({zoom:14})
+              window.dovesiamomap.setOptions({zoom:17})
               window.dovesiamomap.setOptions({center:position})
               makeRisultatoActive(dataset.id);
             })

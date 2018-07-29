@@ -13,7 +13,7 @@
 
 
 <?php
-    $eventi = page('eventi')->children()->visible()->limit(4);
+    $eventi = page('calendario')->children()->visible()->limit(4);
 ?>
     <section>
         <div class="container flex_column_layout">
