@@ -1,6 +1,6 @@
+<div class="container">
 <?php snippet('footer-texture') ?>
-
-    <footer class="footer">
+<footer class="footer">
    
     
     <?php
@@ -42,6 +42,8 @@
     <div class="logofooter">
         <?php snippet('logofooter'); ?>
     </div>
+</div>
     <?php echo js('assets/builds/bundle.js') ?>
+
   </body>
 </html>

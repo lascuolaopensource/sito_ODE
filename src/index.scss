@@ -41,10 +41,12 @@ $grigiochiaro : #f0f0f0;
 .margini {
     margin-top:0!important;
     margin-bottom:0!important;
+    padding-left:5%!important;
+    padding-right:5%!important;
     @media only screen and (max-width: 900px) {
-        margin-left:5%!important;
-        width:90%!important;
-        margin-right:5%!important;
+        margin-left:0!important;
+        width:100%!important;
+        margin-right:0!important;
     }
 }
 *{
@@ -55,11 +57,12 @@ $grigiochiaro : #f0f0f0;
     font-weight: normal!important;
 }
 html{
-    background-color: $colore_sfondo;
+    background-color: $colore_tre;
 }
 body {
     margin: 0;
     padding: 0;
+
 }
 
 div.post-home{
@@ -110,8 +113,6 @@ div.negativo{
     color:white!important;
     padding-top:6.6%;
     padding-bottom:6.6%;
-    margin-top:6.6%;
-    margin-bottom:6.6%;
 }
 div.coworking{
     padding-bottom:3.3%;
@@ -193,17 +194,18 @@ div.logofooter{
         height:7em;
     }
 }
+
 a.calltoaction{
     background:$colore_tre;
-    width:33%;
     color:black;
     text-align:center;
-    min-height:120px;
+    min-height:130px;
     font-size:1.5em;
+    margin:1%;
     padding:50px;
     border: 2px $colore_sfondo solid;
     @media only screen and (max-width: 900px) {
-    width:100%!important;
+    width:96%!important;
     float:left;
     margin-bottom:6%;
     }
@@ -277,15 +279,14 @@ h1.testata{
     font-size:5em;    
 }
 .container.calltoaction{
-    margin-bottom:10%;
+    padding-bottom:10%!important;
 }
 .container{
     width: 100%;
-    max-width: 1080px;
-    margin-bottom:3%;
-    margin-top:3%;
-    margin-left:auto;
-    margin-right:auto;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color:$colore_sfondo;
+
 }
 .titolo{
     color: red;
@@ -377,9 +378,11 @@ a.logo{
     }
 }
 .menu{
+    padding-right:5%!important;
     display:flex;
     width: 100%;
-    padding: 10px 0; 
+    margin:0;
+    padding:0; 
     justify-content: space-between;
         @media only screen and (max-width: 900px) {
         display:block;
@@ -432,19 +435,20 @@ h2.titolino{
 }
 
 .header{
-    width: 90%;
-    margin-left:5%;
-    margin-right:5%;
+    padding:2.5%;
+    width: 100%;
+    margin: 0 auto;
     @media only screen and (max-width: 900px) {
         padding-top:0.5em;
     }
 }
 footer{
+    background-color:$colore_due!important;
     flex-direction: row-reverse;
     margin-top:-10px;
     display:flex;
     padding:5%;
-    background-color:$colore_due;
+    font-size:0.9em;
     @media only screen and (max-width: 900px) {
     font-size:0.75em;
     flex-wrap:wrap;
@@ -618,6 +622,7 @@ h2.data{
     margin: 0;
 
     .cover_content{
+        padding-top:3%;
         display: flex;
         flex-direction: column;
         align-items: center;

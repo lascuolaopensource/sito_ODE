@@ -26,7 +26,7 @@
     ?>
     <div class="cover has_bg">
     <?= $bg ?>
-    <div class="container cover_content">
+    <div class="cover_content">
         <h1 class="cover_title"><?= $titolo ?></h1>
         <hr>
         <div class="tagfilters">

@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<header class="header">
+<header class="header container">
 <?php
 $items = $pages->visible();
 if($items->count()):
