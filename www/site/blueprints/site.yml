@@ -1,5 +1,5 @@
 title: site
-  
+pages: true
 fields:
   title:
     label: Title

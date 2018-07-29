@@ -6,8 +6,10 @@
    $descrizione = $page->text()->kirbytext();
 ?>
 
- <div class="">
+ <div class="flex_column_lauot container">
+     <h1><?= $titolo ?></h1>
      <p><?= $descrizione ?></p>
+
      <div>
        <?php foreach( $page->faq()->yaml() as $item ): ?>
            <div class="" >

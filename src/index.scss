@@ -1,5 +1,22 @@
+@import '../node_modules/normalize.css/normalize.css';
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto Mono';
+}
+
 body {
-  margin: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.titolo{
+    color: red;
 }
 
 .articles{
@@ -11,3 +28,450 @@ body {
   border: 1px solid blue;
   margin: 15px;
 }
+
+.menu{
+    width: 100%;
+    padding: 10px 0; 
+    .menu_list{
+        list-style: none;
+        padding: 0;
+        .menu_item{
+            display: inline-block;
+            margin: 0 15px;
+            &:first-child{
+                margin: 0 15px 0 0;
+            }
+            &:last-child{
+                margin: 0 0 0 15px;
+            }
+        }
+    }
+}
+
+.nav_blog{
+    width: 100%;
+    padding: 10px 0; 
+    .nav_blog_list{
+        list-style: none;
+        .nav_blog_item{
+            display: inline-block;
+            margin: 0 15px;
+        }
+    }
+}
+
+.header{
+    width: 100%;
+}
+.footer{
+    width: 100%;
+    color: white;
+}
+
+.flex_sidebar_layout{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex_column_layout{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .content_list{
+        width: 100%;
+    }
+}
+.sidebar{
+    width: 20vw;
+    padding: 15px;
+    background-color: beige;
+    ul{
+        list-style: none
+    }
+}
+.topbar{
+    width: 100%;
+    padding: 15px;
+    background-color: beige;
+    ul{
+        list-style: none;
+        padding: 0;
+        li{
+            display: inline-block;
+        }
+    }
+}
+.content_list{
+    padding: 15px;
+    width: 80vw;
+}
+
+.post_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.post_list_head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main_posts{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.main_posts_left{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+.main_posts_right{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+.has_bg{
+    position: relative;
+    img{
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        z-index: -1;
+    }
+}
+.post_box{
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    img{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        z-index: 0;
+    }
+    .post_box_detail{
+        position: relative;
+        z-index: 1;
+    }
+    &.full{
+        width: 100%;
+    }
+}
+.post_big{
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.post_small{
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.cover{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    display: block;
+    margin: 0 0 150px 0;
+    .cover_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        top: 50%;
+        z-index: 2;
+    }
+}
+
+#search{
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+.filterbar{
+    ul{
+        list-style: none;
+        li{
+            display: inline-block;
+        }
+    }
+}
+
+
+.events_list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.event_item{
+    position: relative;
+    display: block;
+    flex-grow: 1;
+    width: 400px;
+    padding: 15px;
+    margin: 15px;
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(0,0,0,1); 
+
+    //&:before{
+    //    content:"";
+    //    display: block;
+    //    position: absolute;
+    //    top: 0;
+    //    bottom: 0;
+    //    left: 0;
+    //    right: 0;
+    //    background-color: rgba(0,0,0,.5);
+    //    z-index: 0; 
+    //}
+    .bg{
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1; 
+    }
+    .info{
+        color: white;
+        z-index: 10;
+        .tags{
+            font-size: .8em;
+            padding: 5px 10px;
+            display: inline-block;
+            background-color: red;
+        }
+        .category{
+            font-size: 1.5em;
+            padding: 5px 10px;
+            display: inline-block;
+            background-color: blue;
+        }
+        .price{
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+    }
+}
+
+.servizio_icona{
+    width: 100px;
+    height: 100px;
+}
+/////////////////////////////////////// ENZO
+
+//.container{
+//    width: 100%;
+//    max-width: 1080px;
+//    margin: 0 auto;
+//    border-right: 2px solid red;
+//    border-left: 2px solid red;
+//    height: 1100px;
+//}
+
+/*==================== SOGGETTI ======================*/
+.copertina-soggetti{
+    width: 100%;
+    height: 300px;
+    background-color: yellow;
+    padding-top: 20px;
+}
+
+.alignleft {
+    float: left;
+    width: 45%;
+    padding: 20px;
+/*	background-color: red;  */
+}
+
+.alignright {
+    float: right;
+    width: 45%;
+    padding: 20px;
+/* background-color: yellow; */
+}
+
+.ul-right{
+    float: left;
+    list-style: none;
+    margin-left: -40px;
+}
+
+.ul-right li{
+    background-color: blue;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.ul-left{
+    float: left;
+    list-style: none;
+    margin-left: -40px;
+}
+
+.ul-left li{
+    background-color: blue;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.title-space-left{ /*Questa regola css PROBABILMENTE sarà sbagliata. La fretta.*/
+    width: 93%;
+    background-color: #bcbfc4;
+    padding: 5px 15px;
+    float: right;
+    text-align: left;
+}
+
+.title-space{ /*Questa regola css PROBABILMENTE sarà sbagliata. La fretta.*/
+    width: 93%;
+    background-color: #bcbfc4;
+    padding: 5px 15px;
+    float: right;
+    text-align: right;
+}
+
+.map-space{
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to right, #3674db , #072556);	
+    margin-top: 30px;
+}
+
+.btn-contact{
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/*==================== SERVIZI ======================*/
+
+#servizi-titolo{
+  text-align: center;
+}
+
+.row {
+  width: 100%;
+    text-align: center;
+}
+
+.block {
+  width: 80px;
+  display: inline-block;
+  zoom: 1;
+  /*background-color: #d7dbe2;*/
+  height: 80px;
+  margin: 10px 40px 10px 40px;
+  text-align: center;
+}
+
+.img-service{
+  width: 30px;
+  background-color: blue;
+  height: 30px;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.name-service{
+  display: inline-block;
+  zoom: 1;
+  margin: 10px auto;
+  font-size: 12px;
+}
+
+#btn-services{
+  margin: 0 auto;
+  display: block;
+}
+
+/*==================== FORM PROPONI UN EVENTO ======================*/
+
+#form-container{
+  width: 100%;
+  background-color: #d6d7d8;
+  display: inline-block;
+  padding: 10px 0 10px 0;
+}
+
+.alignleft {
+  float: left;
+  width: 45%;
+  padding: 20px;
+/*	background-color: red; */
+}
+.alignright {
+  float: right;
+  width: 45%;
+  padding: 20px;
+/*	background-color: yellow; */
+}
+
+#first-name{
+  float: left;
+  width: 40%;
+  border-radius: 5px;
+  border: 1px solid #999da1;
+  padding: 5px;
+}
+
+#last-name{
+  float: right;
+  width: 40%;
+  border-radius: 5px;
+  border: 1px solid #999da1;
+  padding: 5px;
+}
+
+#msg-event{
+  border-radius: 5px;
+  border: 1px solid #999da1;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 98%;
+  height: 180px;
+}
+
+#btn-event{
+  float: right;
+}
+

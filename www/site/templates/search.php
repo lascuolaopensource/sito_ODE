@@ -15,7 +15,6 @@ foreach($results as $article) {
 
 }
 
-echo $query;
 echo json_encode($json);
 
 ?>

@@ -1,8 +1,8 @@
 title: blog
 pages: true
 pages:
-  templates:
-    -articolo
+  template: 
+    - articolo
 fields:
   title:
     label: Title

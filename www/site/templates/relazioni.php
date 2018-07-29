@@ -6,9 +6,9 @@
    $descrizione = $page->text()->html();
    $relazioni = $page->children()->visible();
 ?>
-<div class="flex_sidebar_layout">
+<div class="flex_column_layout container">
        <?php
-       snippet('sidebar', array('list' => $relazioni ) );
+       snippet('topbar', array('list' => $relazioni ) );
        snippet('relations_list', array('list' => $relazioni ) );
        ?>
    </div>

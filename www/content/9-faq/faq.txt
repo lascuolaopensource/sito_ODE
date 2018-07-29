@@ -1,4 +1,4 @@
-Title: blog
+Title: faq
 
 ----
 
@@ -6,4 +6,23 @@ Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod te
 
 ----
 
-Valore: 5
+Faq: 
+
+- 
+  domanda: che fai?
+  risposta: i siti
+- 
+  domanda: hai mangiato?
+  risposta: 'no'
+- 
+  domanda: come stai?
+  risposta: tutto bene, tu?
+- 
+  domanda: Domenica andiamo al mare?
+  risposta: si!
+- 
+  domanda: Ma stasera?
+  risposta: boh non so..
+- 
+  domanda: "Hai visto l'ultimo di sorrentino? Davvero incredibile!"
+  risposta: 'no'

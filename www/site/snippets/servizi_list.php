@@ -1,12 +1,14 @@
-<?php snippet('header') ?>
-<div class="container">
+<div class="content_list">
+<?php 
+
+    if(true){ ?>
         <div>
-            <?php
-                $titolo = $page->title()->html();
-                $descrizione = $page->descrizione()->kirbytext();
-                $link = $page->link()->url();
-                $image = $page->image()->toFile();
-                $touchpoint = $page->touchpoint()->toStructure();
+            <?php foreach( $list as $item ){
+                $titolo = $item->title()->html();
+                $descrizione = $item->descrizione()->kirbytext();
+                $link = $item->link()->url();
+                //$image = $item->image()->toFile();
+                $touchpoint = $item->touchpoint()->toStructure();
                 ?>
                 <div class="content_list_item" id="<?= $titolo ?>_item" >
                     <div class="head">
@@ -20,6 +22,8 @@
                     <?php endforeach;?>
                     
                 </div>
+            <?php } ?>
         </div>
+    <?php }
+?>
 </div>
-<?php snippet('footer') ?>
