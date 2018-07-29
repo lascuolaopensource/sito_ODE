@@ -1,0 +1,9 @@
+title: bacheca
+pages: false
+files: true
+  
+fields:
+
+  title:
+   label: Titolo
+   type:  text
