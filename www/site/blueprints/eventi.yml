@@ -1,8 +1,7 @@
 title: eventi
 pages: true
 pages:
-  templates:
-    -evento
+  template: evento
 fields:
   title:
     label: Title

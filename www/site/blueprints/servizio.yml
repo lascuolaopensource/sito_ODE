@@ -34,7 +34,7 @@ fields:
       mail:
         label: mail 
         type: email
-      descrizione:
+      ruolo:
         label: ruolo
         type: text
         

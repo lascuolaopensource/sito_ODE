@@ -1,8 +1,10 @@
 <?php
 
 @include __DIR__ . DS . 'license.php';
+
 c::set('map.key', 'AIzaSyCm8q0HlWOcPQ_iwUEwAPmQPIlqIZK0pBk');
 
+/*
 c::set('languages', array(
 	array(
 		'code'    => 'en',
@@ -19,6 +21,7 @@ c::set('languages', array(
 		'url'     => '/'
 	)
 ));
+*/
 
 c::set('cache', false);
 /*

@@ -37,9 +37,8 @@
   };
 
   Loader.prototype.maps = function () {
-    //return 'AIzaSyCm8q0HlWOcPQ_iwUEwAPmQPIlqIZK0pBk';
     $.ajax({
-      url: 'maps/key',
+      url: '/maps/key',
       success: (function (_loader) {
         return function (data) {
           google.load('maps', '3', {

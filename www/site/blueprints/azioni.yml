@@ -1,8 +1,8 @@
 title: azioni
 pages: true
 pages:
-  templates:
-    -azione
+  template: 
+    - azione
 fields:
   title:
     label: Title

@@ -3,7 +3,7 @@ pages: false
 files: true
   
 fields:
-  titolo:
+  title:
     label: titolo articolo
     type:  text
     width: 4/5

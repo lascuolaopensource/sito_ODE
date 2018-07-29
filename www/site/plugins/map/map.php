@@ -4,6 +4,7 @@ $kirby->set('field', 'map', __DIR__ . '/fields/map');
 
 $kirby->set('route', [
   'pattern' => 'maps/key',
+  'method'  => 'GET',
   'action'  => function() {
     if ( site()->user() ) {
       return response::json([

@@ -1,12 +1,11 @@
 <?php snippet('header') ?>
 
+<?php $soggetti = $page->children()->visible(); ?>
 <nav class="nav_blog">
     <ul class="nav_blog_list container">
-        <li class="nav_blog_item" >Soggetto</li>
-        <li class="nav_blog_item" >Soggetto</li>
-        <li class="nav_blog_item" >Soggetto</li>
-        <li class="nav_blog_item" >Soggetto</li>
-        <li class="nav_blog_item" >Soggetto</li>
+        <?php foreach($soggetti as $soggetto ):?>
+            <li class="nav_blog_item" ><?= $soggetto->title(); ?></li>
+        <?php endforeach; ?>
         <input type="text" name="search" id="search">
     </ul>
 </nav>
