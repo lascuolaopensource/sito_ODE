@@ -553,6 +553,14 @@ div.informations{
 .flex_sidebar_layout{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    @media screen and (max-width: 900px){
+        flex-direction: column-reverse;
+    }
+    .content p{
+        line-height: 1.8em;
+        max-width: 50ch;
+    }
 }
 
 .flex_column_layout{
@@ -565,11 +573,24 @@ div.informations{
     }
 }
 .sidebar{
-    width: 20vw;
-    padding: 15px;
-    background-color: beige;
+    width: 350px;
+    padding: 0 30px 30px 30px;
     ul{
         list-style: none
+    }
+    h1{
+        margin-top: 0;
+    }
+    .side_info_element{
+        padding-bottom: 5px;
+        border-bottom: 1px solid black;
+
+    }
+    @media screen and (max-width: 900px){
+        width: 100%;
+        padding: 0 0 30px 0;
+        border-bottom: 1px solid black;
+        margin-bottom: 25px;
     }
 }
 .topbar{
@@ -676,15 +697,14 @@ div.informations{
 }
 h2.data{
     text-align:center;
-    width:100%;
+    //width:100%;
     font-size:3em;
 }
 .cover{
     width: 100%;
-    height: 40vh;
     position: relative;
     display: block;
-    margin: 0;
+    margin: 0 0 3rem 0;
 
     .cover_content{
         padding-top:3%;
@@ -695,12 +715,20 @@ h2.data{
         position: relative;
         top: 0%;
         z-index: 2;
+        .data{
+            display: inline-block;
+            background-color: black;
+            padding: 5px 10px;
+            font-size: 1em;
+            color: white;
+            margin: 1rem 0;
+        }
         h1{
         font-size:6.6em;
         font-family:'LIB-1';
         margin:0;
-        color:black;
-        text-shadow: 3px 3px $colore_tre;
+        color:$colore_tre;
+        text-shadow: 3px 3px black;
         @media only screen and (max-width: 1200px) {
         font-size: 5em;
         }     
@@ -714,10 +742,11 @@ h2.data{
         margin-top:15%;
         }      
         }
-        a{
+        .tag{
             color:$colore_tre;
             text-shadow: none;
             font-size:1.5em;
+            margin: 2rem 0;
             &:hover{
                 color:$colore;
             }

@@ -8,7 +8,19 @@ import './modules/sticky-kit.js';
 
 $(document).ready(function(){
   
-  $('.sticky_info').stick_in_parent();
+  const window_width = $( window ).width();
+  if (window_width > 900) {
+    $('.sticky_info').stick_in_parent();
+  };
+  
+  $( window ).resize(function() {
+    const window_width = $( window ).width();
+    if (window_width < 900) {
+      $(".sticky_info").trigger("sticky_kit:detach");
+    } else {
+      $('.sticky_info').stick_in_parent();
+    }
+  });
 
   tns({
     container: '.gallery',
