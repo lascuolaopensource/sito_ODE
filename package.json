@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/brocessing/kirby-webpack#readme",
   "devDependencies": {
+    "@google/markerclusterer": "^1.0.2",
     "@pqml/node-php-server": "^0.3.1",
     "autoprefixer": "^8.2.0",
     "babel-core": "^6.26.0",

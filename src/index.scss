@@ -290,6 +290,115 @@ body {
     width: 100px;
     height: 100px;
 }
+
+
+div.container.dovesiamo{
+	h2{
+	  width:100%;
+	  text-align:center;
+	  text-transform:uppercase;
+	  font-size:3em;
+	  line-height:1.5em;
+	  color: black;    
+	  font-family: 'AmsiProBold', sans-serif;
+	  font-weight: 0;
+	  font-style: none;
+	  text-align:center;
+	}
+}
+div.map_container{
+	padding-bottom:60px;
+	margin-bottom:60px;
+	display:flex;
+		@media only screen and (max-width: 1200px) {
+    	flex-direction: column-reverse; 
+		}
+
+	#sidebar_dovesiamo{
+		width:20%;
+		@media only screen and (max-width: 1200px) {
+	    	width:100%;
+		}
+		div.input{
+			@media only screen and (max-width: 1200px) {
+				padding:5%;
+				width:90%;
+				margin-bottom:0;
+			}
+			padding:7.5%;
+			width:100%;
+			background-color:grey;
+			margin-bottom:15px;
+			input{
+				@media only screen and (max-width: 1200px) {
+					width:100%;
+				}
+  				font-family: 'Roboto condensed', sans-serif;
+				width:85%;
+				font-size:14px;
+				padding-left:3px;
+			    box-sizing: border-box;
+				border:2px white solid;
+				outline-color:white;
+			}
+		}
+		#risultati_dovesiamo{
+	    overflow-y: scroll!important;
+	    max-height:422px;
+			div.risultato_sede{
+				line-height:1.15em;
+				cursor:pointer;
+				transition: all .3s;
+				padding:15px;
+				&.active,
+				&:hover{
+					background-color:rgba(231,178,94,0.25);
+				}
+				span.titolo{
+					font-size:15px;
+					margin-bottom:15px;
+					text-transform: uppercase;
+					font-weight:900;
+					font-style:normal;
+				}
+				div.servizio{
+					& span{
+						color: black;
+						font-size:12px;
+						font-weight:600;
+					}
+				}
+				div.details{
+					color:grey;
+					font-size:12px;
+					font-weight:400;
+				}
+			}
+		}
+	}
+
+	#map_dovesiamo{
+		width:80%;
+		min-height: 500px;
+		margin:0!important;
+		padding:0!important;
+		@media only screen and (max-width: 1200px) {
+	    	width:100%;
+		}
+	}
+}
+
+#map {
+  min-height: 300px;
+  height:auto!important;
+  width: 60%;
+	@media only screen and (max-width: 1200px) {
+	width:70%;
+	}
+	@media only screen and (max-width: 900px) {
+	width:100%;
+	}
+ }
 /////////////////////////////////////// ENZO
 
 //.container{

@@ -1,12 +1,16 @@
 import $ from 'jquery';
-//import initFooterMap from "./modules/footermap.js";
-
-
+import initMap from "./modules/mappa.js";
+import { loadScriptAsync } from "./modules/utility.js";
 
 $(document).ready(function(){
 
-    //initFooterMap();
 
+  loadScriptAsync("https://maps.googleapis.com/maps/api/js?key=AIzaSyCm8q0HlWOcPQ_iwUEwAPmQPIlqIZK0pBk").then(function(){
+    if(document.getElementById('map_dovesiamo')){
+      initMap();      
+    }
+  });
+    
     $('.post_list_view_filter').click(function(e){
         e.preventDefault();
         const viewStyle = $(e.target).data('view-style');
