@@ -1,11 +1,11 @@
 title: eventi
-pages: true
 pages:
-  template: evento
+  template:
+    - evento
 fields:
   title:
     label: Title
-    type:  text
+    type: text
   text:
     label: Text
-    type:  textarea
+    type: textarea

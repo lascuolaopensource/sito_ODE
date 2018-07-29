@@ -4,8 +4,6 @@ Coworking:
 
 Descrizione: 
 
-#**c/ode** è il coworking dell**'officina degli esordi**.
-
 Una terrazza sul Mediterraneo, una nuova esperienza di lavoro disegnata per interpretare le tue esigenze, lo spazio ideale per progettare il futuro. Inizia la tua avventura nel cuore pulsante dell'innovazione
 
 Cavalca l’onda insieme ad altri coworkers e/o vivi la giornata nella tua isola felice a c_OdE:  troverai un ampio spazio di lavoro in un ambiente luminoso & eco-friendly; aree polifunzionali immaginate per momenti di introspezione creativa o chiacchierate online; supporti per documentazione e archiviazione.
@@ -15,42 +13,11 @@ Se tutto questo non fosse abbastanza, troverai un HOST pronto a navigare con te 
 
 ----
 
-Tariffario: 
-
-##Esperienza
-##**BASE**
-Hai un pacchetto di opzioni base gratuite per iniziare:
-
-→ Orario dedicato 10.00-13.00 / 15.00-18.30
-→ Desk condiviso
-→ Accesso Area Bar & Ristoro
-→ Free Wi-Fi
-→ Servizio di Hosting
-→ Accesso Area Relax & Social
+Tariffario: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ----
 
-Dotazione: 
-
-##Esperienza 
-##**PRO**
-Puoi scegliere tra queste le opzioni che ti interessano:
-
-→ Orario continuato 10.00-20.00
-→ Chiave d’accesso personalizzata 
-→ Desk Premium
-→ Accesso Area Bar & Ristoro
-→ Area Relax & Social
-→ Free Wi-Fi
-→ Spazio fisico archiviazione
-→ Convenzioni Bar Ristoranti
-→ Convenzioni con realtà interne
-→ Possibilità di scambiare tempo in spazio
-→ Accesso Meeting room
-→ Accesso alla piattaforma della Community
-→ Eventi Tutoring & Networking
-
-Per questo tipo di servizio è prevista una quota mensile che verrà stimata sulla base delle richieste che formalizzerete nel modulo allegato alla pagina.
+Dotazione: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ----
 
@@ -62,4 +29,4 @@ Mail: mail@cowo.rking
 
 ----
 
-Title: c/ode
+Title: coworking
