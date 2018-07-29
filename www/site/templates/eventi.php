@@ -2,6 +2,9 @@
 
         <?php $eventi = page('eventi')->children()->visible(); ?>
 
+<div class="container">
+<?php snippet('footer-texture-due'); ?>    
+</div>
 
 <div class="flex_column_layout container">
 

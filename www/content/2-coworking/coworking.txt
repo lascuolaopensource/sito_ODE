@@ -4,7 +4,7 @@ Coworking:
 
 Descrizione: 
 
-#**c_ode** è il coworking dell**'officina degli esordi**.
+#**c/ode** è il coworking dell**'officina degli esordi**.
 
 Una terrazza sul Mediterraneo, una nuova esperienza di lavoro disegnata per interpretare le tue esigenze, lo spazio ideale per progettare il futuro. Inizia la tua avventura nel cuore pulsante dell'innovazione
 
@@ -62,4 +62,4 @@ Mail: mail@cowo.rking
 
 ----
 
-Title: c_ode
+Title: c/ode
