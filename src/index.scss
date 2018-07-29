@@ -37,7 +37,39 @@ $grigiochiaro : #f0f0f0;
         text-shadow: none;
     }
 }
+div.actions{
+    width:100%;
+    margin-top:60px;
+    margin-bottom:60px;
+    a{
+        width:40%;
+        margin:10%;
+        text-align: center;
+        line-height:2em;
+        padding-top:15px;
 
+    }
+}
+section.cowo{
+    p.description{
+    font-size:2em;
+    @media only screen and (max-width: 900px) {
+    font-size:1em;
+    color:$colore_due;
+    }
+    }
+    h1{
+        margin-top:30px!important;
+        margin-bottom:60px!important;
+        margin:0;
+        text-align:center;
+    }
+    p{
+    }
+}
+section.cowo{
+    padding:30px!important;
+}
 .margini {
     margin-top:0!important;
     margin-bottom:0!important;
@@ -107,6 +139,11 @@ a{  text-decoration: none!important;
     &:hover{
         color:#23f0c7;
     }
+    &.active{
+        color:$colore!important;
+        padding-bottom:3px;
+        border-bottom: 2px solid;
+    }
 }
 div.negativo{
     background-color:black!important;
@@ -115,7 +152,8 @@ div.negativo{
     padding-bottom:6.6%;
 }
 div.coworking{
-    padding-bottom:3.3%;
+    padding:0;
+    margin-bottom:-7px;
 }
 h2.extreme-container{
     display:flex;
@@ -180,6 +218,9 @@ p.second{
 div.flexbox{
     display:flex;
     width:100%;
+    *{
+        padding-right:30px;
+    }
     @media only screen and (max-width: 900px) {
     display:block;
     }
@@ -188,14 +229,15 @@ div.logofooter{
     background-color:$colore_due;
     width:100%;
     text-align:center;
-    padding-top:5%;
-    padding-bottom:5%;
+    padding-top:15%;
+    padding-bottom:25%;
     svg{
         height:7em;
     }
 }
 
 a.calltoaction{
+
     background:$colore_tre;
     color:black;
     text-align:center;
@@ -238,8 +280,8 @@ a.more_events{
     padding:10px;
     padding-right:15px;
     padding-left:15px;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 5em;
+    margin-bottom: 5em;
     &.coworking{
       background-color:black!important;
       color:$colore_tre!important;
@@ -274,12 +316,35 @@ li.button.active{
             background-color: $colore_due;
     }
 }
-
+h2.nope{
+    font-size:2em;
+    width:66%;
+    text-align:center;
+    margin-bottom:10%;
+    margin-top:7.5%;
+}
+div.cowo{
+    *{
+        text-align:left!important;
+    }
+}
+div.elemento_cowo{
+    width:50%;
+}
 h1.testata{
-    font-size:5em;    
+    font-size:15vw;    
+    line-height:1em;
+    margin:0;
+    font-family: 'LIB-2';
+    @media only screen and (max-width: 1200px) {
+    font-family: 'LIB-1';
+    }
+    @media only screen and (max-width: 900px) {
+    }
 }
 .container.calltoaction{
-    padding-bottom:10%!important;
+    padding-bottom:5%!important;
+    padding-top:5%!important;
 }
 .container{
     width: 100%;
@@ -289,11 +354,11 @@ h1.testata{
 
 }
 .titolo{
-    color: red;
+    color: $colore;
 }
 
 .articles{
-  border: 1px solid red;
+  border: 1px solid $colore;
   padding: 15px;
 }
 
@@ -437,6 +502,7 @@ h2.titolino{
 .header{
     padding:2.5%;
     width: 100%;
+    min-height:6em;
     margin: 0 auto;
     @media only screen and (max-width: 900px) {
         padding-top:0.5em;
@@ -565,7 +631,7 @@ div.informations{
 .post_box{
     width: 150px;
     height: 150px;
-    border: 1px solid red;
+    border: 1px solid $colore;
     margin: 15px;
     padding: 15px;
     display: flex;
@@ -768,14 +834,14 @@ div.container.dovesiamo{
 }
 div.map_container{
 	padding-bottom:60px;
-	margin-bottom:60px;
+	margin-bottom:0px;
 	display:flex;
 		@media only screen and (max-width: 1200px) {
     	flex-direction: column-reverse; 
 		}
 
 	#sidebar_dovesiamo{
-		width:20%;
+		width:33%;
 		@media only screen and (max-width: 1200px) {
 	    	width:100%;
 		}
@@ -785,34 +851,37 @@ div.map_container{
 				width:90%;
 				margin-bottom:0;
 			}
-			padding:7.5%;
+			padding:0;
 			width:100%;
 			background-color:grey;
-			margin-bottom:15px;
+			margin-bottom:0px;
 			input{
 				@media only screen and (max-width: 1200px) {
 					width:100%;
 				}
   				font-family: 'Roboto condensed', sans-serif;
-				width:85%;
-				font-size:14px;
-				padding-left:3px;
+				width:100%;
+                line-height:1.5em!important;
+				font-size:20px;
+				padding:15px;
+                padding-top:17px;
+                font-family:'LIB-P';
 			    box-sizing: border-box;
-				border:2px $colore_sfondo solid;
+				border:none!important;
 				outline-color:$colore_sfondo;
 			}
 		}
 		#risultati_dovesiamo{
 	    overflow-y: scroll!important;
 	    max-height:422px;
-			div.risultato_sede{
+			div.risultato_rel{
 				line-height:1.15em;
 				cursor:pointer;
 				transition: all .3s;
 				padding:15px;
-				&.active,
-				&:hover{
-					background-color:rgba(231,178,94,0.25);
+                border-bottom:2px $colore_due solid;
+				&.active,&:hover{
+					background-color:$colore_tre;
 				}
 				span.titolo{
 					font-size:15px;
@@ -820,16 +889,17 @@ div.map_container{
 					text-transform: uppercase;
 					font-weight:900;
 					font-style:normal;
+                    color:$colore_due;
 				}
 				div.servizio{
 					& span{
-						color: black;
+                        color:$colore_due;
 						font-size:12px;
 						font-weight:600;
 					}
 				}
 				div.details{
-					color:grey;
+                    color:$colore_due;
 					font-size:12px;
 					font-weight:400;
 				}
@@ -865,8 +935,8 @@ div.map_container{
 //    width: 100%;
 //    max-width: 1080px;
 //    margin: 0 auto;
-//    border-right: 2px solid red;
-//    border-left: 2px solid red;
+//    border-right: 2px solid $colore;
+//    border-left: 2px solid $colore;
 //    height: 1100px;
 //}
 
@@ -882,7 +952,7 @@ div.map_container{
     float: left;
     width: 45%;
     padding: 20px;
-/*	background-color: red;  */
+/*	background-color: $colore;  */
 }
 
 .alignright {
@@ -1005,7 +1075,7 @@ div.map_container{
   float: left;
   width: 45%;
   padding: 20px;
-/*	background-color: red; */
+/*	background-color: $colore; */
 }
 .alignright {
   float: right;

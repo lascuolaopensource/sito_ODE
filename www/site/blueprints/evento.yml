@@ -57,11 +57,6 @@ fields:
    type:  text
    width: 1/2
 
-  gallery:
-   label: Gallery
-   type: gallery
-   aspectRatio: 16:9
-
   cover:
    label: Immagine di Copertina
    type: image

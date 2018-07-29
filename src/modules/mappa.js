@@ -3,13 +3,13 @@ import styleMappa from "./styleMap.js";
 import MarkerClusterer from '@google/markerclusterer';
 
 export default function initMap() {
-          const myLatLng = {lat: 41.5875209, lng: 13};
+          const myLatLng = {lat: 41.125283, lng: 16.8579983};
 
           // Create a map object and specify the DOM element
           // for display.
           const map = new google.maps.Map(document.getElementById('map_dovesiamo'), {
             center: myLatLng,
-            zoom: 6,
+            zoom: 17,
             styles: styleMappa
           });
 
@@ -90,7 +90,7 @@ export default function initMap() {
             console.log(e,data)
             clearMarkers();
             addMarkers(data);
-            map.setOptions({zoom:12})
+            map.setOptions({zoom:17})
             map.setOptions({center:{lat: +data[0].lat, lng: +data[0].lng}})
           })
 
@@ -114,13 +114,13 @@ export default function initMap() {
         }  
 
         const makeRisultatoActive = function(id){
-          const el = $('#lista_risultati_dove .risultato_sede').filter(function(){
+          const el = $('#lista_risultati_dove .risultato_rel').filter(function(){
             return $(this).data("id") == id
           });
           el.detach();
           $('#lista_risultati_dove').prepend(el);
           $('#risultati_dovesiamo').scrollTop('0');
-          $('.risultato_sede').removeClass('active');
+          $('.risultato_rel').removeClass('active');
           el.addClass('active');
         };
 
@@ -138,13 +138,13 @@ export default function initMap() {
                   risultati += 'tel: <span class="dato">' + rel.tel + '</span><br>'; 
                 }
                 if(rel.email){
-                  risultati += 'email: <span class="dato">' + rel.email + '</span><br>'; 
+                  risultati += 'email: <span class="dato">' + rel.email + '</span><br><br>'; 
                 }
                 if(rel.apertura){
                 risultati += 'orari: <span class="dato orari">' + rel.apertura + '</span><br><br>';                   
                 }
                 if(rel.note){
-                risultati += 'note: <span class="dato note">' + rel.note + '</span><br><br>';                   
+                risultati += '<span class="dato note">' + rel.note + '</span><br><br>';                   
                 }
                 risultati += '</div>';
                 risultati += '</div>';
@@ -154,12 +154,12 @@ export default function initMap() {
 
             $('#risultati_dovesiamo').html(risultati);
 
-            $('.risultato_sede').click(function(e){
-              const dataset = $(e.target).closest('.risultato_sede').data();
+            $('.risultato_rel').click(function(e){
+              const dataset = $(e.target).closest('.risultato_rel').data();
               const position = {lat: +dataset['lat'],
                                 lng: +dataset['lng']};
               console.log(position);
-              window.dovesiamomap.setOptions({zoom:17})
+              window.dovesiamomap.setOptions({zoom:14})
               window.dovesiamomap.setOptions({center:position})
               makeRisultatoActive(dataset.id);
             })

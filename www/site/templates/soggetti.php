@@ -7,16 +7,21 @@
     $soggetti = $page->children()->visible();
 ?>
 
-<section>
-    <div class="container flex_column_layout">
-        <h1><?= $titolo ?></h1>
-        <p><?= $descrizione ?></p>
-    </div>
+
+<div class="container">
+<?php snippet('footer-texture-due'); ?>    
+</div>
+
+<section class="container cowo">
+    <h1 class="testata">
+        <?= $page->title() ?>
+    </h1>
+    <p class="description"><?= $descrizione->kirbytext() ?></p>
+
 </section>
-<section>
-    <div class="container">
-        <?php snippet('soggetti_list',array('list'=>$soggetti)); ?>
-    </div>
-</section>
+
+
+<?php snippet('footer') ?>
+
 
 <?php snippet('footer') ?>

@@ -27,28 +27,7 @@
         </div>
     </section>
 
-    <section>
-        <div class="margini container flex_column_layout calltoaction">
 
-            <h1>Call to action</h1>
-            <div class="flexbox">
-            <?php foreach ($page->interazioni()->toStructure() as $item):?>
-                <a class="calltoaction" href="<?= $item->url() ?>" title="<?= $item->titolo() ?>" target="_blank"><?= $item->titolo() ?></a>
-            <?php endforeach; ?>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container flex_column_layout negativo">
-            <h1>Scopri Officina</h1>
-            <h2 class="extreme-container">
-            <a class="extreme" title="servizi" href="/servizi">→ servizi</a>
-            <br>
-            <a class="extreme" title="spazi" href="/spazi">→ spazi</a> 
-            </h2>
-        </div>
-    </section>
     <section>
         <div class="container flex_column_layout coworking">
            <div class="box">
@@ -64,6 +43,32 @@
            </div>
         </div>
     </section>
+
+    <section>
+        <div class="container flex_column_layout negativo">
+            <h1>Scopri Officina</h1>
+            <h2 class="extreme-container">
+            <a class="extreme" title="servizi" href="/servizi">→ servizi</a>
+            <br>
+            <a class="extreme" title="spazi" href="/spazi">→ spazi</a> 
+            </h2>
+        </div>
+    </section>
+
+    <section>
+        <div class="margini container flex_column_layout calltoaction">
+
+            <h1>Call to action</h1>
+            <div class="flexbox">
+            <?php foreach ($page->interazioni()->toStructure() as $item):?>
+                <a class="calltoaction" href="<?= $item->url() ?>" title="<?= $item->titolo() ?>" target="_blank"><?= $item->titolo() ?></a>
+            <?php endforeach; ?>
+            </div>
+        </div>
+    </section>
+
+    
+    <?php if(page('blog')): ?>
 
     <section>
     <div class="container flex_column_layout">
@@ -92,10 +97,10 @@
         </div>
 
         <a class="more_events" href="/blog" title="vedi tutti">altre notizie</a>
-
+        
     </div>
     </section>
-
+    <?php endif; ?>
 
 
 </div> <!-- .container -->
