@@ -23,6 +23,22 @@ c::set('languages', array(
 ));
 */
 
+c::set('routes', array(
+	array(
+	  'pattern' => 'bacheca/(:any)',
+	  'action'  => function($slug) {
+  
+		$page = page('spazi')->children()->find($slug);
+  
+		//if(!$page) $page = page('blog/' . $uid);
+		//if(!$page) $page = site()->errorPage();
+  
+		return site()->visit($page);
+  
+	  }
+	)
+  ));
+
 c::set('cache', false);
 /*
 

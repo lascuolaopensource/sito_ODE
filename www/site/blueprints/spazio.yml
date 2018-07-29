@@ -31,4 +31,20 @@ fields:
   coworking:
     label: spunta se questo spazio è usabile per il coworking
     type: checkbox
-  
+
+  contatti:
+    label: inserisci qui le informazioni di contatto 
+    type: structure
+    fields:
+      nome: 
+        label: nome
+        type: text
+      mail:
+        label: mail 
+        type: email
+      ruolo:
+        label: ruolo
+        type: text  
+      tel:
+        label: numero di telefono
+        type: text  
