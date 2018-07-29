@@ -38,12 +38,7 @@ snippet('header') ?>
    $descrizione = $page->text()->html();
    $relazioni = $page->children()->visible();
 ?>
-<div class="flex_column_layout container">
-       <?php
-       snippet('topbar', array('list' => $relazioni ) );
-       snippet('relations_list', array('list' => $relazioni ) );
-       ?>
-</div>
+
 <div class="container">
 
     <div class="map_container">

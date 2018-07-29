@@ -1,9 +1,0 @@
-Title: blog
-
-----
-
-Valore: 3
-
-----
-
-Text: 

@@ -1,4 +1,6 @@
+<?php if($list->isNotEmpty()): ?>
 <div class="events_list">
+
             <?php foreach( $list->sortBy('nextdate')->flip()->limit(6) as $evento ){
                 $titolo = $evento->title()->html();
                 $luogo = $evento->luogo()->yaml();
@@ -28,4 +30,8 @@
                 </a>
             <?php } ?>
 </div>
-
+<?php else: ?>
+<h2 class="message nope">
+    Al momento non ci sono contenuti di questo tipo.
+</h2>
+<?php endif; ?>

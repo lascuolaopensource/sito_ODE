@@ -10,13 +10,24 @@
     $mail = $page->mail();
 ?>
 
-<section class="container">
-    <h1><?= $titolo ?></h1>
-    <p><?= $descrizione ?></p>
-    <p><?= $tariffario ?></p>
-    <p><?= $dotazione ?></p>
-    <a href="<?= $iscrizione ?>">Iscriviti</a>
-    <a href="mailto:<?= $mail ?>">Scrivici</a>
+<div class="container">
+<?php snippet('footer-texture-due'); ?>    
+</div>
+<section class="container cowo">
+    <h1 class="testata">
+        <?= $page->title() ?>
+    </h1>
+    <p class="description"><?= $descrizione->kirbytext() ?></p>
+
+    <div class="flexbox">
+    <div class="elemento_cowo"><?= $tariffario->kirbytext()  ?></div>
+    <div class="elemento_cowo"><?= $dotazione->kirbytext()  ?></div>
+    </div>
+    <div class="flexbox actions">
+    <a class="more_events" href="<?= $iscrizione ?>" title="iscriviti">Iscriviti</a>
+
+    <a class="more_events" href="mailto:<?= $mail ?>" title="scrivici">Scrivici</a>
+    </div>
 </section>
 
 
