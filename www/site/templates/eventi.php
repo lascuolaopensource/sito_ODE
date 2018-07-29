@@ -1,21 +1,28 @@
 <?php snippet('header') ?>
 
+<<<<<<< HEAD
 
 <?php $eventi = page('calendario')->children()->visible(); ?>
 
 
+=======
+>>>>>>> origin/eventiok
 <div class="container">
-<?php snippet('footer-texture-due'); ?>    
+<?php //snippet('footer-texture-due'); ?>    
 </div>
 
 <div class="flex_column_layout container">
 
 	<h1 class="testata">
-		<?= $page->title() ?>
 	</h2>
 
         <?php
+<<<<<<< HEAD
         snippet('filterbar', array('list' => $eventi ) );
+=======
+                //snippet('filterbar', array('list' => page('eventi')->children()->visible()->sortBy('nextdate')->flip()->limit(6) ) );
+                snippet('events_list', array('list' => page('eventi')->children() ) );
+>>>>>>> origin/eventiok
         ?>
 
        <?php if($eventi->isNotEmpty()): ?>

@@ -1,0 +1,154 @@
+title: evento
+pages: false
+files: true
+fields:
+  title:
+    label: Titolo
+    type: text
+  luogo:
+    label: Dove si svolge questa attività?
+    width: 1/2
+    type: select
+    required: true
+    options:
+      uno: uno
+      due: due
+      tre: tre
+      quattro: quattro
+      cinque: cinque
+      sei: sei
+      sette: sette
+    columns: 5
+  soggetto:
+    label: Chi cura/organizza l'attività?
+    type: text
+    required: true
+    width: 1/2
+  categoria:
+    label: categoria
+    type: radio
+    options:
+      corso: corso
+      workshop: workshop
+      laboratorio: laboratorio
+      mostra: mostra
+      reading: reading
+      concerto: concerto
+      jam: jam
+      evento: evento
+    columns: 3
+  paypal:
+    label: ID PAYPAL
+    type: text
+  formid:
+    label: URL FORM PRE-ISCRIZIONE AL CORSO
+    type: url
+    width: 1/2
+  excel:
+    label: PUB-KEY EXCEL ISCRIZIONI
+    type: text
+    width: 1/2
+  cover:
+    label: Immagine di Copertina
+    type: image
+    mode: single
+    types:
+      - image
+  tags:
+    label: Ambiti tematici (parole chiave)
+    type: tags
+    width: 1/2
+  prezzo:
+    label: Costo in € per studente
+    type: number
+    width: 1/2
+  line-b:
+    type: line
+  audience:
+    label: A chi si rivolge?
+    type: checkboxes
+    options:
+      bambini: bambini
+      ragazzi: ragazzi
+      studenti: studenti
+      ricercatori: ricercatori
+      professionisti: professionisti
+      imprese: imprese
+      PA: pubbliche amministrazioni
+      pensionati: pensionati
+      immigrati: immigrati
+      disoccupati: disoccupati
+      tutti: tutti
+    columns: 5
+  line-c:
+    type: line
+  durata:
+    label: Durata totale in ore
+    type: number
+    width: 1/2
+    required: true
+  deadline:
+    label: Deadline per le iscrizioni
+    type: date
+    width: 1/2
+  nextdate:
+    label: Inizio dell'attività
+    type: date
+    width: 1/2
+    required: true
+  appuntamenti:
+    label: date del corso
+    type: structure
+    entry: |
+      {{data}}<br /> {{inizio}}<br /> {{fine}}
+    fields:
+      appuntamento:
+        label: Data del corso
+        type: date
+        format: DD/MM/YYYY
+        required: true
+      inizio:
+        label: Orario di inizio
+        type: text
+      fine:
+        label: Orario di fine
+        type: text
+  line-d:
+    type: line
+  ospiti:
+    label: 'Ospiti (docenti, tutor, etc…)'
+    type: structure
+    entry: |
+      {{nome}}<br /> {{professione}}<br /> {{organizzazione}}
+    fields:
+      nome:
+        label: Nome e cognome
+        type: text
+      professione:
+        label: Professione
+        type: text
+      organizzazione:
+        label: Organizzazione di appartenenza
+        type: text
+      bio:
+        label: Bio (max 400 caratteri)
+        type: textarea
+  line-e:
+    type: line
+  num_min:
+    label: Numero minimo di partecipanti
+    type: number
+    width: 1/2
+    placeholder: Inserire un numero
+  num_max:
+    label: Numero massimo di partecipanti
+    type: number
+    width: 1/2
+    placeholder: Inserire un numero
+  programma:
+    label: Come si svolge questa attività?
+    type: textarea
+    required: true
+    placeholder: >-
+      Inserire una descrizione generale del programma, indicando fasi, modalità
+      di lavoro, etc…
