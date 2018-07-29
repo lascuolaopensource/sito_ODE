@@ -1,0 +1,93 @@
+Title: evento due
+
+----
+
+Luogo: uno
+
+----
+
+Soggetto: spine
+
+----
+
+Categoria: corso
+
+----
+
+Paypal: 
+
+----
+
+Formid: 
+
+----
+
+Excel: 
+
+----
+
+Gallery: 
+
+----
+
+Cover: schermata-2018-07-29-alle-15.30.09.png
+
+----
+
+Tags: 
+
+----
+
+Prezzo: 
+
+----
+
+Line-b: 
+
+----
+
+Audience: 
+
+----
+
+Line-c: 
+
+----
+
+Durata: 13
+
+----
+
+Deadline: 
+
+----
+
+Nextdate: 2018-07-26
+
+----
+
+Appuntamenti: 
+
+----
+
+Line-d: 
+
+----
+
+Ospiti: 
+
+----
+
+Line-e: 
+
+----
+
+Num-min: 
+
+----
+
+Num-max: 
+
+----
+
+Programma: dasdas

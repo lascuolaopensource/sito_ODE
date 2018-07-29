@@ -1,0 +1,97 @@
+Title: eventissimo
+
+----
+
+Luogo: cinque
+
+----
+
+Soggetto: SOS
+
+----
+
+Categoria: reading
+
+----
+
+Paypal: 87654
+
+----
+
+Formid: http://www.ode.it
+
+----
+
+Excel: 65435
+
+----
+
+Gallery: 
+
+- israel-palacio-459693-unsplash.jpg
+- >
+  vidar-nordli-mathisen-755942-unsplash.jpg
+
+----
+
+Cover: vidar-nordli-mathisen-755942-unsplash.jpg
+
+----
+
+Tags: cultra e socetà
+
+----
+
+Prezzo: 90
+
+----
+
+Line-b: 
+
+----
+
+Audience: ragazzi, studenti, ricercatori, professionisti, pensionati, disoccupati
+
+----
+
+Line-c: 
+
+----
+
+Durata: 3
+
+----
+
+Deadline: 2018-07-29
+
+----
+
+Nextdate: 2018-07-29
+
+----
+
+Appuntamenti: 
+
+----
+
+Line-d: 
+
+----
+
+Ospiti: 
+
+----
+
+Line-e: 
+
+----
+
+Num-min: 
+
+----
+
+Num-max: 
+
+----
+
+Programma: bene

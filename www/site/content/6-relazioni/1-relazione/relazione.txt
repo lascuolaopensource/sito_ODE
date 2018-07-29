@@ -1,0 +1,30 @@
+Title: FF
+
+----
+
+Location: 
+
+address: via Mercantini, 2 int.18
+lat: "41.1240673"
+lng: "16.871457700000065"
+zoom: "15"
+
+----
+
+Cap: 20158
+
+----
+
+Tel: +393287839573
+
+----
+
+Email: emidio.torre@gmail.com
+
+----
+
+Apertura: sempre
+
+----
+
+Note: ciao
