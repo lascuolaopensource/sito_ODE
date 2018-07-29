@@ -1,9 +1,17 @@
 import $ from 'jquery';
 import initMap from "./modules/mappa.js";
 import { loadScriptAsync } from "./modules/utility.js";
+import {tns} from '../node_modules/tiny-slider/src/tiny-slider';
 
 $(document).ready(function(){
-
+  tns({
+    container: '.gallery',
+    slideBy: 'page',
+    nav: false,
+    fixedWidth: false,
+    controls: false,
+    autoplay: true
+  });
 
   loadScriptAsync("https://maps.googleapis.com/maps/api/js?key=AIzaSyCm8q0HlWOcPQ_iwUEwAPmQPIlqIZK0pBk").then(function(){
     if(document.getElementById('map_dovesiamo')){
@@ -28,6 +36,8 @@ $(document).ready(function(){
 
     $('#search').keydown(ajaxSearch);
 
+
+    
 });
 
 const ajaxSearch = function(e){

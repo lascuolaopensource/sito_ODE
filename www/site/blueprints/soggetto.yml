@@ -34,9 +34,35 @@ fields:
     label: value proposition
     type:  textarea
     width: 1/2
+  
+  ora_apertura:
+    label: orario di apertura
+    type: time
+    width: 1/2
+
+  ora_chiusura:
+    label: orario di chiusura
+    type: time
+    width: 1/2
 
   tags:
    label: tags
    type:  tags
 
+  touchpoint:
+    label: inserisci qui le informazioni di contatto 
+    type: structure
+    fields:
+      nome: 
+        label: nome
+        type: text
+      mail:
+        label: mail 
+        type: email
+      tel:
+        label: numero di telefono
+        type: text
+      ruolo:
+        label: ruolo
+        type: text
 

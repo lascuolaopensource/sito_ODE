@@ -32,19 +32,18 @@ fields:
     label: spunta se questo spazio è usabile per il coworking
     type: checkbox
 
-  contatti:
-    label: inserisci qui le informazioni di contatto 
-    type: structure
-    fields:
-      nome: 
-        label: nome
-        type: text
-      mail:
-        label: mail 
-        type: email
-      ruolo:
-        label: ruolo
-        type: text  
-      tel:
-        label: numero di telefono
-        type: text  
+  mail:
+    label: mail 
+    type: email
+  
+  tel:
+    label: numero di telefono
+    type: text  
+
+  ora_apertura:
+    label: orario di apertura
+    type: time
+
+  ora_chiusura:
+    label: orario di chiusura
+    type: time
