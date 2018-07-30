@@ -21,7 +21,7 @@
 <div class="container padding">
 <?php foreach($page->children()->sortBy('title')->flip() as $soggetto): ?>
     <div class="elemento_soggetto spazio">
-    <a href="<?= $soggetto->link() ?>" title="<?= $soggetto->title() ?>" class="soggetto" ?><h2 class="nome"><?= $soggetto->title() ?></h2></a>
+    <h2 class="nome"><?= $soggetto->title() ?></h2>
         <p class="description">
         <?= $soggetto->descrizione()->text() ?><br>
             <div class="flexbox">
