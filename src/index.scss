@@ -355,6 +355,15 @@ a.more_events{
         color:white!important;
       }    
   }
+    &.stampa{
+      background-color:$colore_tre!important;
+      color:black!important;
+      &:hover{
+        background-color:$colore_due!important;
+        color:white!important;
+      }    
+  }
+
     &.iscriviti{
       background-color:$colore!important;
       color:white!important;

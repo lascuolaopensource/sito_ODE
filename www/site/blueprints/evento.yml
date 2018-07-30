@@ -92,12 +92,11 @@ fields:
     type: date
     width: 1/2
   nextdate:
-    label: Inizio dell'attività
+    label: data (usare se c'è un solo incontro/evento)
     type: date
     width: 1/2
-    required: true
   appuntamenti:
-    label: date del corso
+    label: date (usare se ci sono più appuntamenti)
     type: structure
     entry: |
       {{data}}<br /> {{inizio}}<br /> {{fine}}

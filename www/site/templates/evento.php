@@ -1,3 +1,5 @@
+<?php if(!$print = param('print')): ?>
+
 <?php snippet('header'); ?>
 <div class="events_list">
 <?php
@@ -74,10 +76,24 @@
                             <?php if($soggetto->isNotEmpty()): ?>
                                 <p class="side_info_element" >Organizzato da:<br><strong><?= $soggetto ?></strong></p>
                             <?php endif; ?>
-                                <p class="side_info_element" ><?= date('d/m/Y', $nextdate) ?></p>
+
+
+
+
+                            <?php if($nextdate): ?>
+                            <p class="side_info_element"><?= date('d/m/Y', $nextdate); ?></p>
+                            <?php elseif($page->appuntamenti()->toStructure()->isNotEmpty()): ?>
+                                <?php foreach($page->appuntamenti()->toStructure() as $item): ?>
+                                    <?php $item_date = strtotime($item->appuntamento()); ?>
+                                    <?= date('d/m/Y', $item_date); ?>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+
                                 <a class="more_events contattaci" href="<?= $link ?>">→ contattaci</a><br>
-                            <?php if($page->formid()->isNotEmpty()): ?>
                             <br>
+                             <a class="more_events stampa" href="<?= $page->url() ?>/print:true">→ stampa</a>
+                            <?php if($page->formid()->isNotEmpty()): ?>
+                            <br><br>
                              <a class="more_events iscriviti" href="<?= $page->formid() ?>">→ iscriviti</a>
                             <?php endif; ?>
                         </div>
@@ -88,3 +104,50 @@
 </div>
 
 <?php snippet('footer'); ?>
+<?php else: ?>
+  <link rel="stylesheet" type="text/css" href="assets/builds/print.css" media="print">
+<?php
+    $bg = $page->cover()->toFile();    
+    $titolo = $page->title()->html();
+    $luogo = $page->luogo();
+    $soggetto = $page->soggetto()->html();
+    $categoria = $page->categoria();
+    $cover = $page->cover()->html();
+    $tags = $page->tags()->html();
+    $prezzo = $page->prezzo()->html();
+    $link = $page->link()->url();
+    $paypal = $page->paypal()->html();
+    $form_id = $page->form_id()->html();
+    $excel_key = $page->excel_key()->html();
+    $durata = $page->durata()->html();
+    $deadline = $page->deadline()->html();
+    $nextdate = strtotime($page->nextdate());
+    $appuntamenti = $page->appuntamenti()->toStructure();
+    $ospiti = $page->ospiti()->html();
+    $num_min = $page->num_min()->html();
+    $num_max = $page->num_max()->html();
+    $programma = $page->programma()->kirbytext();
+    $audience = $page->audience()->yaml();
+    //$image = $page->image()->toFile();
+    ?>
+
+<div class="page">
+<h2 class="titolo"><?= $page->title(); ?></h2>
+
+<?php if($nextdate): ?>
+<h3 class="data"><?= date('d/m/Y', $nextdate); ?></h2>
+<?php elseif($page->appuntamenti()->toStructure()->isNotEmpty()): ?>
+    <?php foreach($page->appuntamenti()->toStructure() as $item): ?>
+        <?php $item_date = strtotime($item->appuntamento()); ?>
+        <p class="data"><?= date('d/m/Y', $item_date); ?></p>
+    <?php endforeach; ?>
+<?php endif; ?>
+
+<p class="details"><?= $durata ?> ore <?php if($prezzo->isNotEmpty()): ?>/ costo <?= $prezzo ?> euro<?php endif;?></p>
+
+<p class="categoria"><?= $categoria ?> → spazio <?= $luogo ?></p>
+<p class="descrizione"><?= $programma ?></p>
+<h2 class="link"><?= $link ?></h2>
+</div>
+
+<?php endif; ?>

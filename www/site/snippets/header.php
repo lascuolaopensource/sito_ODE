@@ -20,7 +20,7 @@ if($items->count()):
 
 <div class="menu container show">
 
-<a class="logo" href="<?= $site->url() ?>" title="Home"><img src="../assets/images/logoode.svg" alt="home"></a>
+<a class="logo" href="<?= $site->url() ?>" title="Home"><img src="/assets/images/logoode.svg" alt="home"></a>
 
 <div class="btn-responsive-menu">
             <span class="icon-bar"></span>
