@@ -2,7 +2,11 @@ Title: bar
 
 ----
 
-Descrizione: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Descrizione: 
+
+###Il Bar dell’Officina degli Esordi rappresenta un piacevole punto di sosta e socializzazione all'interno di ODE grazie anche alla bella terrazza esterna e all'adiacente sala esposizioni.
+<br>
+###Aperto al pubblico (con ingresso diretto da via Trevisani) dal lunedì al sabato dalle 10 alle 22, il bar è dotato di un’ampia cucina attrezzata e offre la possibilità di pranzare in maniera genuina ed equilibrata.
 
 ----
 

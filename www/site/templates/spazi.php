@@ -24,7 +24,7 @@
     <h2 class="nome"><?= $soggetto->title() ?></h2>
         <p class="description">
         <?= $soggetto->descrizione()->text() ?><br>
-            <div class="flexbox">
+            <div class="flexbox spazio">
                 <?php if($soggetto->dotazione()->isNotEmpty()): ?>
                 <p class="mini"><?= $soggetto->dotazione(); ?></p>
                 <?php endif; ?>
@@ -33,7 +33,15 @@
                 <?php endif; ?>
                 <?php if($soggetto->ora_apertura()->isNotEmpty() && $soggetto->ora_chiusura()->isNotEmpty()): ?>
                 <p class="mini"><?= $soggetto->ora_apertura(); ?> — <?= $soggetto->ora_chiusura(); ?></p>
-                <?php endif; ?>                
+                <?php endif; ?>             
+                    <div class="flexbox spazi">
+                <?php if($soggetto->mail()->isNotEmpty()): ?>
+                        <a class="more_events" href="mailto:<?= $soggetto->mail() ?>">@</a>
+                <?php endif; ?>   
+                <?php if($soggetto->tel()->isNotEmpty()): ?>
+                        <a class="more_events" href="tel:<?= $soggetto->tel() ?>"><img class="svgicon" src="/assets/images/phone.svg" alt=""></a>
+                <?php endif; ?>   
+                    </div>
             </div>
         </p>
     </div>

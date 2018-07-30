@@ -5,15 +5,15 @@
     $titolo = $page->title()->html();
     $descrizione = $page->descrizione()->html();
     $tariffario = $page->tariffario()->html();
-    $dotazione = $page->dotazione()->html();
-    $iscrizione = $page->iscrizione()->html();
+    $dotazione = $page->dotazione();
+    $iscrizione = $page->iscrizione();
     $mail = $page->mail();
 ?>
 
 <div class="container">
 <?php snippet('footer-texture-tre'); ?>    
 </div>
-<section class="container cowo">
+<section class="container cowo stretto">
     <h1 class="testata">
         <?= $page->title() ?>
     </h1>
