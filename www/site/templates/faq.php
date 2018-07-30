@@ -1,27 +1,27 @@
 <?php snippet('header') ?>
 
 
-<?php
-   $titolo = $page->title();
-   $descrizione = $page->text()->kirbytext();
-?>
 
- <div class="flex_column_lauot container">
-     <h1><?= $titolo ?></h1>
-     <p><?= $descrizione ?></p>
 
-     <div>
-       <?php foreach( $page->faq()->yaml() as $item ): ?>
-           <div class="" >
+<div class="container">
+<?php snippet('footer-texture-due'); ?>    
+</div>
 
-               <p><?= $item['domanda'] ?></p>
-               <p><?= $item['risposta'] ?></p>
-               
-               
-           </div>
-       <?php endforeach; ?>
+<section class="container cowo">
+    <h1 class="testata">
+        <?= $page->title() ?>
+    </h1>
+</section>
 
-   </div>
-   </div>
+<div class="container padding faq">
+<?php foreach($page->faq()->toStructure() as $faq): ?>
+    <div class="domanda">
+    <h2 class="question"><?= $faq->domanda() ?></h2>
+        <p class="answer">
+        <?= $faq->risposta()->text() ?>
+        </p>
+    </div>
+<?php endforeach; ?>
+</div>
 
 <?php snippet('footer') ?>

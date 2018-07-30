@@ -13,7 +13,7 @@
 
 
 <?php
-    $eventi = page('calendario')->children()->visible()->limit(4);
+    $eventi = page('eventi')->children()->visible()->limit(4);
 ?>
     <section>
         <div class="container flex_column_layout">
@@ -67,40 +67,6 @@
         </div>
     </section>
 
-    
-    <?php if(page('blog')): ?>
-
-    <section>
-    <div class="container flex_column_layout">
-        <h1>L'ultima notizia</h1><br>
-        
-        <div class="post-home">
-        
-            <a class="none" href="<?= page('blog')->children()->visible()->last()->url() ?>">
-            <div class="sx">
-                <?= page('blog')->children()->visible()->last()->cover()->toFile(); ?>
-            </div>
-
-            <div class="dx">
-                <h2 class="titolino"><?= page('blog')->children()->visible()->last()->title() ?></h2>
-
-                <p class="descrizione">
-                <?= excerpt(page('blog')->children()->visible()->last()->testo()->kirbytext(), 140) ?>
-                </p>
-
-                <h5 class="autore"><?= page('blog')->children()->visible()->last()->autore() ?>
-                </h5>
-                <?php foreach(page('blog')->children()->visible()->last()->tags() as $tag): ?>
-                <?php endforeach; ?>
-            </div>
-            </a>
-        </div>
-
-        <a class="more_events" href="/blog" title="vedi tutti">altre notizie</a>
-        
-    </div>
-    </section>
-    <?php endif; ?>
 
 
 </div> <!-- .container -->

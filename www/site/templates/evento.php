@@ -57,30 +57,26 @@
                     <div class="sidebar">
                         <div class="sticky_info">
                             <h1>informazioni</h1>
-                            <?php if(isset($prezzo)): ?>
+                            <?php if($prezzo->isNotEmpty()): ?>
                                 <p class="side_info_element" >Prezzo: <?= $prezzo ?></p>
                             <?php endif; ?>
-                            <?php if(isset($durata)): ?>
+                            <?php if($durata->isNotEmpty()): ?>
                                 <p class="side_info_element" >Durata: <?= $durata ?></p>
                             <?php endif; ?>
-                            <?php if(isset($num_min)): ?>
+                            <?php if($num_min->isNotEmpty()): ?>
                                 <p class="side_info_element" >numero minimo di partecipanti: <?= $num_min ?></p>
                             <?php endif; ?>
-                            <?php if(isset($num_max)): ?>
+                            <?php if($num_max->isNotEmpty()): ?>
                                 <p class="side_info_element" >numero massimo di partecipanti: <?= $num_max ?></p>
                             <?php endif; ?>
-                            <?php if(isset($deadline)): ?>
+                            <?php if($deadline->isNotEmpty()): ?>
                                 <p class="side_info_element" >deadline: <?= $deadline ?></p>
                             <?php endif; ?>
-                            <?php if(isset($soggetto)): ?>
+                            <?php if($soggetto->isNotEmpty()): ?>
                                 <p class="side_info_element" >Organizzato da: <?= $soggetto ?></p>
                             <?php endif; ?>
-                            <?php if(isset($nextdate)): ?>
-                                <p class="side_info_element" >Prossimo appuntamento: <?= $nextdate ?></p>
-                            <?php endif; ?>
-                            <?php if(isset($link)): ?>
-                                <a href="<?= $link ?>">maggiori informazioni</a>
-                            <?php endif; ?>
+                                <p class="side_info_element" >Prossimo appuntamento: <?= date('d/m/Y', $nextdate) ?></p>
+                                <a href="<?= $link ?>">→prezzo maggiori informazioni</a>
                         </div>
                     </div>
                 </div>

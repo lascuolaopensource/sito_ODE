@@ -38,7 +38,11 @@ snippet('header') ?>
    $descrizione = $page->text()->html();
    $relazioni = $page->children()->visible();
 ?>
-
+<section class="container cowo">
+    <h1 class="testata">
+        la rete
+    </h1>
+</section>
 <div class="container">
 
     <div class="map_container">

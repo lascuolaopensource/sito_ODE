@@ -1,0 +1,49 @@
+Title: bar
+
+----
+
+Descrizione: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+----
+
+Offerta: 
+
+- 
+  piatto: Pasta in bianco
+  image: ""
+  ingredienti: |
+    - sadas
+    - sadas
+    - asdas
+    - dasa as
+  prezzo: 5 euro
+  visibile: "1"
+- 
+  piatto: Costolette di agnello
+  image: ""
+  ingredienti: |
+    costolette
+    fuoco
+  prezzo: 8 euro
+  visibile: "1"
+- 
+  piatto: riso thai con verdure
+  image: ""
+  ingredienti: |
+    riso
+    verdure
+    amore
+  prezzo: 5 euro
+  visibile: "1"
+
+----
+
+Line: 
+
+----
+
+Mail: blabla@blabla.com
+
+----
+
+Orario: dal martedì al venerdì: 15:00 - 00:00 / sabato: 19:00 - 00:00
