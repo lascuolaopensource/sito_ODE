@@ -25,6 +25,9 @@ fields:
       titolo:
         label: titolo
         type: text
+      icona:
+        label: icona svg
+        type: image
       url:
         label: url di destinazione
         type: text

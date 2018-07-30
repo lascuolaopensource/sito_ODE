@@ -61,7 +61,7 @@
             <h1>Call to action</h1>
             <div class="flexbox">
             <?php foreach ($page->interazioni()->toStructure() as $item):?>
-                <a class="calltoaction" href="<?= $item->url() ?>" title="<?= $item->titolo() ?>" target="_blank"><?= $item->titolo() ?></a>
+                <a class="calltoaction" href="<?= $item->url() ?>" title="<?= $item->titolo() ?>" target="_blank"><img src="<?= $site->url(); ?>/assets/images/<?= $item->icona()->id();?>"><br><?= $item->titolo() ?></a>
             <?php endforeach; ?>
             </div>
         </div>

@@ -262,7 +262,12 @@ div.logofooter{
 }
 
 a.calltoaction{
-
+    img{
+        height:5em;
+        margin:0 auto;
+        padding:0;
+        margin-bottom:1em;
+    }
     background:$colore_tre;
     color:black;
     text-align:center;

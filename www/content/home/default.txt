@@ -6,7 +6,10 @@ Testo:
 
 ----
 
-Testo-1: **3000 mq di spazi**: 5 sale prove, 4 aziende creative residenti, 2 terrazze, 2 aree workshop, 2 sale food/drink, hackerspace service, libreria, copisteria interna, area coworking, bar, ristorante, <u>parcheggio sempre a disposizione.</u>
+Testo-1: 
+
+**3000 mq di possibilità**: 
+5 sale prove, 4 aziende creative residenti, 2 terrazze, 2 aree workshop, 2 sale food/drink, hackerspace, fablab, libreria, centro stampa, area coworking, bar, ristorante, <u>parcheggio sempre a disposizione.</u>
 
 ----
 
@@ -35,13 +38,16 @@ Interazioni:
   url: >
     https://docs.google.com/forms/d/e/1FAIpQLSdv7V0X-FiLafTewr7OtpeF3up9qET7FHNBf62Npv9weS3Nvg/viewform
   categoria: uno
+  icona: chat.svg
 - 
   titolo: "proponi un'attività"
   url: >
     https://docs.google.com/forms/d/1IZT1IYHQE3zct_auHseAKLfbL89DSRlL-3_vs9DyBPk/edit?usp=sharing
   categoria: due
+  icona: bulb.svg
 - 
   titolo: diventa coworker
   url: >
     https://docs.google.com/forms/d/1hI189LMcGwItcPtjTaaCtTM1JUyhV-AmFS5OPr0gDsg/viewform?edit_requested=true
   categoria: tre
+  icona: skull.svg
