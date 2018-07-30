@@ -443,7 +443,7 @@ h1.testata{
 }
 .container{
     width: 100%;
-    max-width: 1280px;
+    max-width: 1180px;
     margin: 0 auto;
     background-color:$colore_sfondo;
 
@@ -610,6 +610,9 @@ footer{
     display:flex;
     padding:5%;
     font-size:0.9em;
+    @media only screen and (max-width: 1200px) {
+    font-size:0.75em;
+    }
     @media only screen and (max-width: 900px) {
     font-size:0.75em;
     flex-wrap:wrap;
@@ -983,8 +986,6 @@ div.map_container{
 		}
 		div.input{
 			@media only screen and (max-width: 1200px) {
-				padding:5%;
-				width:90%;
 				margin-bottom:0;
 			}
 			padding:0;

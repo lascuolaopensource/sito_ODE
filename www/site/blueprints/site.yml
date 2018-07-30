@@ -25,21 +25,6 @@ fields:
    type:  image
    width: 1/2
 
-  indirizzo:
-   label: Via, civico, codice di avviamento postale e città
-   type:  text
-   width: 1/3
-
-  fax:
-   label: Fax
-   type:  tel
-   width: 1/3
-
-  tel:
-   label: Telefono
-   type:  tel
-   width: 1/3
-
   email:
    label: Email
    type:  email

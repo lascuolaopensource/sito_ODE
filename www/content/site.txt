@@ -2,15 +2,15 @@ Title: Officina degli Esordi
 
 ----
 
-Description: 
+Description: L'officina degli esordi, il principale contenitore culturale dell'area metropolitana di Bari.  Scopri tutte le attività e le possibilità!
 
 ----
 
-Tags: 
+Tags: laboratorio urbano,officina degli esordi,bari,cultura,centro di produzione culturale indipendente
 
 ----
 
-Sharedimage: 
+Sharedimage: 180413_bam_0724.jpg
 
 ----
 
@@ -26,15 +26,15 @@ Tel:
 
 ----
 
-Email: 
+Email: info@officinadegliesordi.it
 
 ----
 
-Facebook: 
+Facebook: https://www.facebook.com/officinadegliesordi/
 
 ----
 
-Instagram: 
+Instagram: https://www.instagram.com/explore/locations/162356927/officina-degli-esordi/?hl=it
 
 ----
 
