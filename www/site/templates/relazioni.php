@@ -38,6 +38,11 @@ snippet('header') ?>
    $descrizione = $page->text()->html();
    $relazioni = $page->children()->visible();
 ?>
+
+<div class="container">
+<?php snippet('footer-texture-cinque'); ?>    
+</div>
+
 <section class="container cowo">
     <h1 class="testata">
         la rete

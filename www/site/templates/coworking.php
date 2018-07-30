@@ -11,7 +11,7 @@
 ?>
 
 <div class="container">
-<?php snippet('footer-texture-due'); ?>    
+<?php snippet('footer-texture-tre'); ?>    
 </div>
 <section class="container cowo">
     <h1 class="testata">

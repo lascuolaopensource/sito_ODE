@@ -113,26 +113,6 @@ fields:
       fine:
         label: Orario di fine
         type: text
-  line-d:
-    type: line
-  ospiti:
-    label: 'Ospiti (docenti, tutor, etc…)'
-    type: structure
-    entry: |
-      {{nome}}<br /> {{professione}}<br /> {{organizzazione}}
-    fields:
-      nome:
-        label: Nome e cognome
-        type: text
-      professione:
-        label: Professione
-        type: text
-      organizzazione:
-        label: Organizzazione di appartenenza
-        type: text
-      bio:
-        label: Bio (max 400 caratteri)
-        type: textarea
   line-e:
     type: line
   num_min:
@@ -146,7 +126,7 @@ fields:
     width: 1/2
     placeholder: Inserire un numero
   programma:
-    label: Come si svolge questa attività?
+    label: Come si svolge questa attività? (svolgimento, ospiti, dettagli, etc…)
     type: textarea
     required: true
     placeholder: >-

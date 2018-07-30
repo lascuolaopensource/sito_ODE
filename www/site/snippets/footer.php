@@ -24,6 +24,11 @@
     <?php foreach(page('home')->interazioni()->toStructure() as $item): ?>
     <a title="<?php echo $item->titolo()->html() ?>"  href="<?php echo $item->url() ?>">→ <?php echo $item->titolo()->html() ?></a><br>
     <?php endforeach ?>
+
+    <h2 class="titolino">
+      Social
+    </h2>
+        <a class="extreme footer" href="<?= $site->facebook() ?>" title="FB" target="_blank">FB</a>/<a class="extreme footer" href="<?= $site->instagram() ?>" title="IF" target="_blank">IG</a>
     </div>
 
     <div class="informations">
